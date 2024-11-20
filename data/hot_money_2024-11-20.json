@@ -1,0 +1,3979 @@
+{
+  "status_code": 0,
+  "status_msg": "success",
+  "data": {
+    "count": 59,
+    "stock_count": 52,
+    "module": "hot_money",
+    "page": 1,
+    "size": null,
+    "items": [
+      {
+        "hot_money_net_rate": 0.03499012,
+        "sell_value": 412715986.56,
+        "amount": 6840573004.11,
+        "stock_name": "和而泰",
+        "change": 0.099948,
+        "concept_list": [
+          {
+            "code": "885545",
+            "name": "汽车电子",
+            "market_id": "48"
+          },
+          {
+            "code": "885556",
+            "name": "5G",
+            "market_id": "48"
+          },
+          {
+            "code": "885785",
+            "name": "小米概念",
+            "market_id": "48"
+          }
+        ],
+        "market_id": "33",
+        "buy_value": 744625383.2,
+        "hot_rank": 4,
+        "tags": [
+          {
+            "color": "red",
+            "name": "毛老板买",
+            "id": null,
+            "type": "hot_money"
+          },
+          {
+            "color": "red",
+            "name": "消闲派买",
+            "id": null,
+            "type": "hot_money"
+          }
+        ],
+        "range_days": 1,
+        "hot_money_items": [
+          {
+            "hid": null,
+            "sell_value": 135540,
+            "net_value": 155823761.24,
+            "icon": null,
+            "name": "毛老板",
+            "id": "YZ00070",
+            "buy_value": 155959301.24
+          },
+          {
+            "hid": null,
+            "sell_value": 400937,
+            "net_value": 83528698,
+            "icon": null,
+            "name": "消闲派",
+            "id": "YZ00081",
+            "buy_value": 83929635
+          }
+        ],
+        "net_value": 331909396.64,
+        "net_rate": 0.0485207,
+        "limit_reason": "参股摩尔线程+智能控制器+卫星",
+        "stock_code": "002402",
+        "org_net_value": null,
+        "hot_money_net_value": 239352459.24
+      },
+      {
+        "hot_money_net_rate": 0.05502901,
+        "sell_value": 305649433.32,
+        "amount": 3444528437.05,
+        "stock_name": "国光电器",
+        "change": 0.100105,
+        "concept_list": [
+          {
+            "code": "885800",
+            "name": "消费电子概念",
+            "market_id": "48"
+          },
+          {
+            "code": "885868",
+            "name": "无线耳机",
+            "market_id": "48"
+          },
+          {
+            "code": "885376",
+            "name": "苹果概念",
+            "market_id": "48"
+          }
+        ],
+        "market_id": "33",
+        "buy_value": 456571646.56,
+        "hot_rank": 5,
+        "tags": [
+          {
+            "color": "red",
+            "name": "六一中路买",
+            "id": null,
+            "type": "hot_money"
+          },
+          {
+            "color": "red",
+            "name": "炒股养家买",
+            "id": null,
+            "type": "hot_money"
+          },
+          {
+            "color": "red",
+            "name": "呼家楼买",
+            "id": null,
+            "type": "hot_money"
+          },
+          {
+            "color": "green",
+            "name": "欢乐海岸卖",
+            "id": null,
+            "type": "hot_money"
+          },
+          {
+            "color": "green",
+            "name": "上塘路卖",
+            "id": null,
+            "type": "hot_money"
+          }
+        ],
+        "range_days": 1,
+        "hot_money_items": [
+          {
+            "hid": "62501a88c760abd100e42879",
+            "sell_value": 63897920,
+            "net_value": -63225004,
+            "icon": null,
+            "name": "上塘路",
+            "id": "YZ00045",
+            "buy_value": 672916
+          },
+          {
+            "hid": null,
+            "sell_value": 19387753,
+            "net_value": 113573965.2,
+            "icon": null,
+            "name": "六一中路",
+            "id": "YZ00083",
+            "buy_value": 132961718.2
+          },
+          {
+            "hid": null,
+            "sell_value": 208772,
+            "net_value": 86148219,
+            "icon": null,
+            "name": "呼家楼",
+            "id": "YZ00073",
+            "buy_value": 86356991
+          },
+          {
+            "hid": "5c8b6f68802f6491089bdbe1",
+            "sell_value": 48392857,
+            "net_value": -48333378,
+            "icon": null,
+            "name": "欢乐海岸",
+            "id": "YZ00019",
+            "buy_value": 59479
+          },
+          {
+            "hid": "5c8b6f3d802f64c7009bdbde",
+            "sell_value": 0,
+            "net_value": 101385201.56,
+            "icon": null,
+            "name": "炒股养家",
+            "id": "YZ00011",
+            "buy_value": 101385201.56
+          }
+        ],
+        "net_value": 150922213.24,
+        "net_rate": 0.04381506,
+        "limit_reason": "音响+AI+锂电池+虚拟现实",
+        "stock_code": "002045",
+        "org_net_value": null,
+        "hot_money_net_value": 189549003.76
+      },
+      {
+        "hot_money_net_rate": 0.01389897,
+        "sell_value": 879424392.83,
+        "amount": 11833290643.12,
+        "stock_name": "海能达",
+        "change": 0.100092,
+        "concept_list": [
+          {
+            "code": "885574",
+            "name": "卫星导航",
+            "market_id": "48"
+          },
+          {
+            "code": "885556",
+            "name": "5G",
+            "market_id": "48"
+          },
+          {
+            "code": "886037",
+            "name": "6G概念",
+            "market_id": "48"
+          }
+        ],
+        "market_id": "33",
+        "buy_value": 1153947344.73,
+        "hot_rank": 1,
+        "tags": [
+          {
+            "color": "red",
+            "name": "余哥买",
+            "id": null,
+            "type": "hot_money"
+          },
+          {
+            "color": "orange",
+            "name": "六一中路T",
+            "id": null,
+            "type": "hot_money"
+          }
+        ],
+        "range_days": 1,
+        "hot_money_items": [
+          {
+            "hid": null,
+            "sell_value": 106840022.77,
+            "net_value": 20984294.23,
+            "icon": null,
+            "name": "六一中路",
+            "id": "YZ00083",
+            "buy_value": 127824317
+          },
+          {
+            "hid": null,
+            "sell_value": 21598,
+            "net_value": 143486251,
+            "icon": null,
+            "name": "余哥",
+            "id": "YZ00067",
+            "buy_value": 143507849
+          }
+        ],
+        "net_value": 274522951.9,
+        "net_rate": 0.02319921,
+        "limit_reason": "对讲机终端+卫星通信+低空经济+一带一路",
+        "stock_code": "002583",
+        "org_net_value": null,
+        "hot_money_net_value": 164470545.23
+      },
+      {
+        "hot_money_net_rate": 0.03013008,
+        "sell_value": 274470931,
+        "amount": 4635300028.88,
+        "stock_name": "川发龙蟒",
+        "change": 0.100064,
+        "concept_list": [
+          {
+            "code": "885967",
+            "name": "化肥",
+            "market_id": "48"
+          },
+          {
+            "code": "885863",
+            "name": "磷化工",
+            "market_id": "48"
+          },
+          {
+            "code": "885629",
+            "name": "农村电商",
+            "market_id": "48"
+          }
+        ],
+        "market_id": "33",
+        "buy_value": 522474615,
+        "hot_rank": 13,
+        "tags": [
+          {
+            "color": "red",
+            "name": "消闲派买",
+            "id": null,
+            "type": "hot_money"
+          },
+          {
+            "color": "red",
+            "name": "方新侠买",
+            "id": null,
+            "type": "hot_money"
+          },
+          {
+            "color": "green",
+            "name": "温州帮卖",
+            "id": null,
+            "type": "hot_money"
+          }
+        ],
+        "range_days": 1,
+        "hot_money_items": [
+          {
+            "hid": "5c8b6f55802f64e1009bdbdf",
+            "sell_value": 42696406,
+            "net_value": -30323131,
+            "icon": null,
+            "name": "温州帮",
+            "id": "YZ00015",
+            "buy_value": 12373275
+          },
+          {
+            "hid": "5ec282a4d05d0ef20058eafd",
+            "sell_value": 25228,
+            "net_value": 82489654,
+            "icon": null,
+            "name": "方新侠",
+            "id": "YZ00032",
+            "buy_value": 82514882
+          },
+          {
+            "hid": null,
+            "sell_value": 839779,
+            "net_value": 87495447,
+            "icon": null,
+            "name": "消闲派",
+            "id": "YZ00081",
+            "buy_value": 88335226
+          }
+        ],
+        "net_value": 248003684,
+        "net_rate": 0.05350326,
+        "limit_reason": "拟收购股权+磷化工+三季报增长+四川国资",
+        "stock_code": "002312",
+        "org_net_value": null,
+        "hot_money_net_value": 139661970
+      },
+      {
+        "hot_money_net_rate": 0.07885025,
+        "sell_value": 69261774.95,
+        "amount": 1453122619.12,
+        "stock_name": "联创股份",
+        "change": 0.200331,
+        "concept_list": [
+          {
+            "code": "885710",
+            "name": "锂电池概念",
+            "market_id": "48"
+          },
+          {
+            "code": "885928",
+            "name": "钠离子电池",
+            "market_id": "48"
+          },
+          {
+            "code": "885882",
+            "name": "消毒剂",
+            "market_id": "48"
+          }
+        ],
+        "market_id": "33",
+        "buy_value": 182082011.78,
+        "hot_rank": 52,
+        "tags": [
+          {
+            "color": "red",
+            "name": "消闲派买",
+            "id": null,
+            "type": "hot_money"
+          },
+          {
+            "color": "red",
+            "name": "量化打板买",
+            "id": null,
+            "type": "hot_money"
+          },
+          {
+            "color": "red",
+            "name": "上海溧阳路买",
+            "id": null,
+            "type": "hot_money"
+          },
+          {
+            "color": "green",
+            "name": "量化基金卖",
+            "id": null,
+            "type": "hot_money"
+          }
+        ],
+        "range_days": 1,
+        "hot_money_items": [
+          {
+            "hid": "5f8ed593107589df00b9b1a5",
+            "sell_value": 80422,
+            "net_value": 21748870,
+            "icon": null,
+            "name": "上海溧阳路",
+            "id": "YZ00037",
+            "buy_value": 21829292
+          },
+          {
+            "hid": "62501d41c760abe900e42879",
+            "sell_value": 288802,
+            "net_value": 41940460,
+            "icon": null,
+            "name": "量化打板",
+            "id": "YZ00054",
+            "buy_value": 42229262
+          },
+          {
+            "hid": null,
+            "sell_value": 343689,
+            "net_value": 54190782,
+            "icon": null,
+            "name": "消闲派",
+            "id": "YZ00081",
+            "buy_value": 54534471
+          },
+          {
+            "hid": "62501b8dc760abc700e4287a",
+            "sell_value": 7571186,
+            "net_value": -3301035,
+            "icon": null,
+            "name": "量化基金",
+            "id": "YZ00049",
+            "buy_value": 4270151
+          }
+        ],
+        "net_value": 112820236.83,
+        "net_rate": 0.07763986,
+        "limit_reason": "固态电池+锂电池+第四代制冷剂+氟化工",
+        "stock_code": "300343",
+        "org_net_value": 17955036,
+        "hot_money_net_value": 114579077
+      },
+      {
+        "hot_money_net_rate": 0.05909268,
+        "sell_value": 96651947.99,
+        "amount": 1759661246.89,
+        "stock_name": "双成药业",
+        "change": 0.100081,
+        "concept_list": [
+          {
+            "code": "885989",
+            "name": "肝炎概念",
+            "market_id": "48"
+          },
+          {
+            "code": "885927",
+            "name": "CRO概念",
+            "market_id": "48"
+          },
+          {
+            "code": "886056",
+            "name": "阿尔茨海默概念",
+            "market_id": "48"
+          }
+        ],
+        "market_id": "33",
+        "buy_value": 242581578.49,
+        "hot_rank": 19,
+        "tags": [
+          {
+            "color": "orange",
+            "name": "3日",
+            "id": null,
+            "type": "range"
+          },
+          {
+            "color": "red",
+            "name": "思明南路买",
+            "id": null,
+            "type": "hot_money"
+          },
+          {
+            "color": "red",
+            "name": "成都系买",
+            "id": null,
+            "type": "hot_money"
+          }
+        ],
+        "range_days": 3,
+        "hot_money_items": [
+          {
+            "hid": "5c8b6f4b802f644d049bdbde",
+            "sell_value": 199931,
+            "net_value": 43059997,
+            "icon": null,
+            "name": "成都系",
+            "id": "YZ00013",
+            "buy_value": 43259928
+          },
+          {
+            "hid": null,
+            "sell_value": 19824,
+            "net_value": 60923106,
+            "icon": null,
+            "name": "思明南路",
+            "id": "YZ00071",
+            "buy_value": 60942930
+          }
+        ],
+        "net_value": 145929630.5,
+        "net_rate": 0.08293052,
+        "limit_reason": "拟收购宁波奥拉半导体+多肽药",
+        "stock_code": "002693",
+        "org_net_value": 7302713.99,
+        "hot_money_net_value": 103983103
+      },
+      {
+        "hot_money_net_rate": 0.06481522,
+        "sell_value": 65311770.71,
+        "amount": 1577945995.8,
+        "stock_name": "宜通世纪",
+        "change": 0.199782,
+        "concept_list": [
+          {
+            "code": "885459",
+            "name": "网络安全",
+            "market_id": "48"
+          },
+          {
+            "code": "885662",
+            "name": "车联网(车路协同)",
+            "market_id": "48"
+          },
+          {
+            "code": "885963",
+            "name": "智慧灯杆",
+            "market_id": "48"
+          }
+        ],
+        "market_id": "33",
+        "buy_value": 218560184,
+        "hot_rank": 43,
+        "tags": [
+          {
+            "color": "red",
+            "name": "六一中路买",
+            "id": null,
+            "type": "hot_money"
+          },
+          {
+            "color": "red",
+            "name": "炒新一族买",
+            "id": null,
+            "type": "hot_money"
+          }
+        ],
+        "range_days": 1,
+        "hot_money_items": [
+          {
+            "hid": "5c8b6f80802f64f7009bdbdf",
+            "sell_value": 2136810,
+            "net_value": 50941242,
+            "icon": null,
+            "name": "炒新一族",
+            "id": "YZ00022",
+            "buy_value": 53078052
+          },
+          {
+            "hid": null,
+            "sell_value": 24171,
+            "net_value": 51333675,
+            "icon": null,
+            "name": "六一中路",
+            "id": "YZ00083",
+            "buy_value": 51357846
+          }
+        ],
+        "net_value": 153248413.29,
+        "net_rate": 0.09711892,
+        "limit_reason": "平台服务对象包括特斯拉+机器人+通信服务",
+        "stock_code": "300310",
+        "org_net_value": 9428653.4,
+        "hot_money_net_value": 102274917
+      },
+      {
+        "hot_money_net_rate": 0.0124762,
+        "sell_value": 479535564.99,
+        "amount": 7719981859.93,
+        "stock_name": "拓斯达",
+        "change": 0.200079,
+        "concept_list": [
+          {
+            "code": "885930",
+            "name": "工业母机",
+            "market_id": "48"
+          },
+          {
+            "code": "886002",
+            "name": "机器视觉",
+            "market_id": "48"
+          },
+          {
+            "code": "886057",
+            "name": "新型工业化",
+            "market_id": "48"
+          }
+        ],
+        "market_id": "33",
+        "buy_value": 705273464.08,
+        "hot_rank": 15,
+        "tags": [
+          {
+            "color": "orange",
+            "name": "3日",
+            "id": null,
+            "type": "range"
+          },
+          {
+            "color": "red",
+            "name": "炒股养家买",
+            "id": null,
+            "type": "hot_money"
+          },
+          {
+            "color": "orange",
+            "name": "消闲派T",
+            "id": null,
+            "type": "hot_money"
+          }
+        ],
+        "range_days": 3,
+        "hot_money_items": [
+          {
+            "hid": null,
+            "sell_value": 83113799.91,
+            "net_value": 38657766.69,
+            "icon": null,
+            "name": "消闲派",
+            "id": "YZ00081",
+            "buy_value": 121771566.6
+          },
+          {
+            "hid": "5c8b6f3d802f64c7009bdbde",
+            "sell_value": 20196949.2,
+            "net_value": 57658245.63,
+            "icon": null,
+            "name": "炒股养家",
+            "id": "YZ00011",
+            "buy_value": 77855194.83
+          }
+        ],
+        "net_value": 225737899.09,
+        "net_rate": 0.02924073,
+        "limit_reason": "工业机器人+华为概念+低空经济+新型工业化",
+        "stock_code": "300607",
+        "org_net_value": null,
+        "hot_money_net_value": 96316012.32
+      },
+      {
+        "hot_money_net_rate": 0.04362902,
+        "sell_value": 130803837.57,
+        "amount": 1848338110.26,
+        "stock_name": "南兴股份",
+        "change": 0.100054,
+        "concept_list": [
+          {
+            "code": "885728",
+            "name": "人工智能",
+            "market_id": "48"
+          },
+          {
+            "code": "885783",
+            "name": "工业互联网",
+            "market_id": "48"
+          },
+          {
+            "code": "885517",
+            "name": "机器人概念",
+            "market_id": "48"
+          }
+        ],
+        "market_id": "33",
+        "buy_value": 185490135.94,
+        "hot_rank": 37,
+        "tags": [
+          {
+            "color": "red",
+            "name": "北京中关村买",
+            "id": null,
+            "type": "hot_money"
+          },
+          {
+            "color": "red",
+            "name": "六一中路买",
+            "id": null,
+            "type": "hot_money"
+          },
+          {
+            "color": "red",
+            "name": "南京帮买",
+            "id": null,
+            "type": "hot_money"
+          }
+        ],
+        "range_days": 1,
+        "hot_money_items": [
+          {
+            "hid": null,
+            "sell_value": 991300,
+            "net_value": 24803107.15,
+            "icon": null,
+            "name": "六一中路",
+            "id": "YZ00083",
+            "buy_value": 25794407.15
+          },
+          {
+            "hid": "635fc62d3d41d2df00cae1d2",
+            "sell_value": 2039078,
+            "net_value": 37140966,
+            "icon": null,
+            "name": "北京中关村",
+            "id": "YZ00064",
+            "buy_value": 39180044
+          },
+          {
+            "hid": null,
+            "sell_value": 33845,
+            "net_value": 18697104,
+            "icon": null,
+            "name": "南京帮",
+            "id": "YZ00085",
+            "buy_value": 18730949
+          }
+        ],
+        "net_value": 54686298.37,
+        "net_rate": 0.02958674,
+        "limit_reason": "小鹭AIGC智能助手+云计算+华为+高股息",
+        "stock_code": "002757",
+        "org_net_value": -10202253.4,
+        "hot_money_net_value": 80641177.15
+      },
+      {
+        "hot_money_net_rate": 0.01363629,
+        "sell_value": 214497135.57,
+        "amount": 3814164058.07,
+        "stock_name": "南兴股份",
+        "change": 0.100054,
+        "concept_list": [
+          {
+            "code": "885728",
+            "name": "人工智能",
+            "market_id": "48"
+          },
+          {
+            "code": "885783",
+            "name": "工业互联网",
+            "market_id": "48"
+          },
+          {
+            "code": "885517",
+            "name": "机器人概念",
+            "market_id": "48"
+          }
+        ],
+        "market_id": "33",
+        "buy_value": 224953941.84,
+        "hot_rank": 37,
+        "tags": [
+          {
+            "color": "orange",
+            "name": "3日",
+            "id": null,
+            "type": "range"
+          },
+          {
+            "color": "red",
+            "name": "北京中关村买",
+            "id": null,
+            "type": "hot_money"
+          },
+          {
+            "color": "orange",
+            "name": "上塘路T",
+            "id": null,
+            "type": "hot_money"
+          }
+        ],
+        "range_days": 3,
+        "hot_money_items": [
+          {
+            "hid": "62501a88c760abd100e42879",
+            "sell_value": 37204928.04,
+            "net_value": -1232806.04,
+            "icon": null,
+            "name": "上塘路",
+            "id": "YZ00045",
+            "buy_value": 35972122
+          },
+          {
+            "hid": "635fc62d3d41d2df00cae1d2",
+            "sell_value": 2528913,
+            "net_value": 53243851.5,
+            "icon": null,
+            "name": "北京中关村",
+            "id": "YZ00064",
+            "buy_value": 55772764.5
+          }
+        ],
+        "net_value": 10456806.27,
+        "net_rate": 0.00274157,
+        "limit_reason": "小鹭AIGC智能助手+云计算+华为+高股息",
+        "stock_code": "002757",
+        "org_net_value": -5060998.15,
+        "hot_money_net_value": 52011045.46
+      },
+      {
+        "hot_money_net_rate": 0.02584463,
+        "sell_value": 201828133.08,
+        "amount": 1673086999.41,
+        "stock_name": "酷特智能",
+        "change": 0.2,
+        "concept_list": [
+          {
+            "code": "885888",
+            "name": "C2M概念",
+            "market_id": "48"
+          },
+          {
+            "code": "885783",
+            "name": "工业互联网",
+            "market_id": "48"
+          },
+          {
+            "code": "885887",
+            "name": "数据中心",
+            "market_id": "48"
+          }
+        ],
+        "market_id": "33",
+        "buy_value": 191728421.5,
+        "hot_rank": 36,
+        "tags": [
+          {
+            "color": "red",
+            "name": "量化基金买",
+            "id": null,
+            "type": "hot_money"
+          },
+          {
+            "color": "red",
+            "name": "红岭路买",
+            "id": null,
+            "type": "hot_money"
+          }
+        ],
+        "range_days": 1,
+        "hot_money_items": [
+          {
+            "hid": "62501a0dc760abee00e4287c",
+            "sell_value": 8424774,
+            "net_value": 15299111,
+            "icon": null,
+            "name": "红岭路",
+            "id": "YZ00043",
+            "buy_value": 23723885
+          },
+          {
+            "hid": "62501b8dc760abc700e4287a",
+            "sell_value": 12956265,
+            "net_value": 27941199,
+            "icon": null,
+            "name": "量化基金",
+            "id": "YZ00049",
+            "buy_value": 40897464
+          }
+        ],
+        "net_value": -10099711.58,
+        "net_rate": -0.00603657,
+        "limit_reason": "酷特AI Agent+华为+固态电池+服装",
+        "stock_code": "300840",
+        "org_net_value": -56879285.02,
+        "hot_money_net_value": 43240310
+      },
+      {
+        "hot_money_net_rate": 0.02361822,
+        "sell_value": 143014334,
+        "amount": 1730912692.3,
+        "stock_name": "蠡湖股份",
+        "change": 0.200125,
+        "concept_list": [
+          {
+            "code": "885775",
+            "name": "燃料电池",
+            "market_id": "48"
+          },
+          {
+            "code": "885840",
+            "name": "人民币贬值受益",
+            "market_id": "48"
+          },
+          {
+            "code": "885431",
+            "name": "新能源汽车",
+            "market_id": "48"
+          }
+        ],
+        "market_id": "33",
+        "buy_value": 154846101.64,
+        "hot_rank": 80,
+        "tags": [
+          {
+            "color": "orange",
+            "name": "3日",
+            "id": null,
+            "type": "range"
+          },
+          {
+            "color": "red",
+            "name": "量化打板买",
+            "id": null,
+            "type": "hot_money"
+          },
+          {
+            "color": "red",
+            "name": "消闲派买",
+            "id": null,
+            "type": "hot_money"
+          },
+          {
+            "color": "green",
+            "name": "南京帮卖",
+            "id": null,
+            "type": "hot_money"
+          }
+        ],
+        "range_days": 3,
+        "hot_money_items": [
+          {
+            "hid": "62501d41c760abe900e42879",
+            "sell_value": 503747,
+            "net_value": 44113889,
+            "icon": null,
+            "name": "量化打板",
+            "id": "YZ00054",
+            "buy_value": 44617636
+          },
+          {
+            "hid": null,
+            "sell_value": 24589,
+            "net_value": 37314105.5,
+            "icon": null,
+            "name": "消闲派",
+            "id": "YZ00081",
+            "buy_value": 37338694.5
+          },
+          {
+            "hid": null,
+            "sell_value": 60300120,
+            "net_value": -40546918.2,
+            "icon": null,
+            "name": "南京帮",
+            "id": "YZ00085",
+            "buy_value": 19753201.8
+          }
+        ],
+        "net_value": 11831767.64,
+        "net_rate": 0.00683557,
+        "limit_reason": "固态电池+汽车零部件+国企",
+        "stock_code": "300694",
+        "org_net_value": 7918617.34,
+        "hot_money_net_value": 40881076.3
+      },
+      {
+        "hot_money_net_rate": 0.08990773,
+        "sell_value": 26747405.26,
+        "amount": 454520904,
+        "stock_name": "大东方",
+        "change": 0.101099,
+        "concept_list": [
+          {
+            "code": "885911",
+            "name": "社区团购",
+            "market_id": "48"
+          },
+          {
+            "code": "885490",
+            "name": "民营医院",
+            "market_id": "48"
+          },
+          {
+            "code": "885951",
+            "name": "预制菜",
+            "market_id": "48"
+          }
+        ],
+        "market_id": "17",
+        "buy_value": 93680087.38,
+        "hot_rank": 51,
+        "tags": [
+          {
+            "color": "red",
+            "name": "低位挖掘买",
+            "id": null,
+            "type": "hot_money"
+          },
+          {
+            "color": "red",
+            "name": "红岭路买",
+            "id": null,
+            "type": "hot_money"
+          },
+          {
+            "color": "green",
+            "name": "量化基金卖",
+            "id": null,
+            "type": "hot_money"
+          }
+        ],
+        "range_days": 1,
+        "hot_money_items": [
+          {
+            "hid": "62501a0dc760abee00e4287c",
+            "sell_value": null,
+            "net_value": 12011417.22,
+            "icon": null,
+            "name": "红岭路",
+            "id": "YZ00043",
+            "buy_value": 12011417.22
+          },
+          {
+            "hid": null,
+            "sell_value": null,
+            "net_value": 34787238.16,
+            "icon": null,
+            "name": "低位挖掘",
+            "id": "YZ00076",
+            "buy_value": 34787238.16
+          },
+          {
+            "hid": "62501b8dc760abc700e4287a",
+            "sell_value": 5933713.02,
+            "net_value": -5933713.02,
+            "icon": null,
+            "name": "量化基金",
+            "id": "YZ00049",
+            "buy_value": null
+          }
+        ],
+        "net_value": 66932682.12,
+        "net_rate": 0.14725985,
+        "limit_reason": "低市净率+百货零售+医疗健康+老字号",
+        "stock_code": "600327",
+        "org_net_value": null,
+        "hot_money_net_value": 40864942.36
+      },
+      {
+        "hot_money_net_rate": 0.0072738,
+        "sell_value": 388539477.63,
+        "amount": 5496544437.82,
+        "stock_name": "酷特智能",
+        "change": 0.2,
+        "concept_list": [
+          {
+            "code": "885888",
+            "name": "C2M概念",
+            "market_id": "48"
+          },
+          {
+            "code": "885783",
+            "name": "工业互联网",
+            "market_id": "48"
+          },
+          {
+            "code": "885887",
+            "name": "数据中心",
+            "market_id": "48"
+          }
+        ],
+        "market_id": "33",
+        "buy_value": 409317449.29,
+        "hot_rank": 36,
+        "tags": [
+          {
+            "color": "orange",
+            "name": "3日",
+            "id": null,
+            "type": "range"
+          },
+          {
+            "color": "red",
+            "name": "量化基金买",
+            "id": null,
+            "type": "hot_money"
+          }
+        ],
+        "range_days": 3,
+        "hot_money_items": [
+          {
+            "hid": "62501b8dc760abc700e4287a",
+            "sell_value": 17620587,
+            "net_value": 39980771,
+            "icon": null,
+            "name": "量化基金",
+            "id": "YZ00049",
+            "buy_value": 57601358
+          }
+        ],
+        "net_value": 20777971.66,
+        "net_rate": 0.00378019,
+        "limit_reason": "酷特AI Agent+华为+固态电池+服装",
+        "stock_code": "300840",
+        "org_net_value": 50178367.42,
+        "hot_money_net_value": 39980771
+      },
+      {
+        "hot_money_net_rate": 0.02997804,
+        "sell_value": 154802683.04,
+        "amount": 1313695980.35,
+        "stock_name": "精工科技",
+        "change": 0.100266,
+        "concept_list": [
+          {
+            "code": "885650",
+            "name": "碳纤维",
+            "market_id": "48"
+          },
+          {
+            "code": "885929",
+            "name": "专精特新",
+            "market_id": "48"
+          },
+          {
+            "code": "885427",
+            "name": "高端装备",
+            "market_id": "48"
+          }
+        ],
+        "market_id": "33",
+        "buy_value": 183725563.11,
+        "hot_rank": 49,
+        "tags": [
+          {
+            "color": "orange",
+            "name": "3日",
+            "id": null,
+            "type": "range"
+          },
+          {
+            "color": "red",
+            "name": "上海超短买",
+            "id": null,
+            "type": "hot_money"
+          },
+          {
+            "color": "orange",
+            "name": "量化打板T",
+            "id": null,
+            "type": "hot_money"
+          }
+        ],
+        "range_days": 3,
+        "hot_money_items": [
+          {
+            "hid": "62501d41c760abe900e42879",
+            "sell_value": 17924331,
+            "net_value": 2999615.2,
+            "icon": null,
+            "name": "量化打板",
+            "id": "YZ00054",
+            "buy_value": 20923946.2
+          },
+          {
+            "hid": "5c8b6f32802f64c4009bdbdd",
+            "sell_value": 98496,
+            "net_value": 36382413.94,
+            "icon": null,
+            "name": "上海超短",
+            "id": "YZ00066",
+            "buy_value": 36480909.94
+          }
+        ],
+        "net_value": 28922880.07,
+        "net_rate": 0.02201642,
+        "limit_reason": "低空经济+机器人+专用设备+碳纤维",
+        "stock_code": "002006",
+        "org_net_value": -10319321,
+        "hot_money_net_value": 39382029.14
+      },
+      {
+        "hot_money_net_rate": 0.05530471,
+        "sell_value": 72053597.93,
+        "amount": 704527333,
+        "stock_name": "实达集团",
+        "change": 0.10101,
+        "concept_list": [
+          {
+            "code": "885413",
+            "name": "创投",
+            "market_id": "48"
+          },
+          {
+            "code": "886021",
+            "name": "国企改革",
+            "market_id": "48"
+          },
+          {
+            "code": "885617",
+            "name": "福建自贸区",
+            "market_id": "48"
+          }
+        ],
+        "market_id": "17",
+        "buy_value": 122050035,
+        "hot_rank": 53,
+        "tags": [
+          {
+            "color": "red",
+            "name": "成都系买",
+            "id": null,
+            "type": "hot_money"
+          },
+          {
+            "color": "green",
+            "name": "量化基金卖",
+            "id": null,
+            "type": "hot_money"
+          }
+        ],
+        "range_days": 1,
+        "hot_money_items": [
+          {
+            "hid": "5c8b6f4b802f644d049bdbde",
+            "sell_value": null,
+            "net_value": 51776127,
+            "icon": null,
+            "name": "成都系",
+            "id": "YZ00013",
+            "buy_value": 51776127
+          },
+          {
+            "hid": "62501b8dc760abc700e4287a",
+            "sell_value": 12812449,
+            "net_value": -12812449,
+            "icon": null,
+            "name": "量化基金",
+            "id": "YZ00049",
+            "buy_value": null
+          }
+        ],
+        "net_value": 49996437.07,
+        "net_rate": 0.07096451,
+        "limit_reason": "资产注入预期+数据要素+算力+国企",
+        "stock_code": "600734",
+        "org_net_value": null,
+        "hot_money_net_value": 38963678
+      },
+      {
+        "hot_money_net_rate": 0.10460988,
+        "sell_value": 34434551,
+        "amount": 364177267.21,
+        "stock_name": "博菲电气",
+        "change": 0.100027,
+        "concept_list": [
+          {
+            "code": "885924",
+            "name": "共同富裕示范区",
+            "market_id": "48"
+          },
+          {
+            "code": "885531",
+            "name": "光伏概念",
+            "market_id": "48"
+          },
+          {
+            "code": "885912",
+            "name": "有机硅概念",
+            "market_id": "48"
+          }
+        ],
+        "market_id": "33",
+        "buy_value": 72637275.24,
+        "hot_rank": 112,
+        "tags": [
+          {
+            "color": "red",
+            "name": "六一中路买",
+            "id": null,
+            "type": "hot_money"
+          },
+          {
+            "color": "green",
+            "name": "炒新一族卖",
+            "id": null,
+            "type": "hot_money"
+          },
+          {
+            "color": "green",
+            "name": "广东帮卖",
+            "id": null,
+            "type": "hot_money"
+          }
+        ],
+        "range_days": 1,
+        "hot_money_items": [
+          {
+            "hid": "5c8b6f80802f64f7009bdbdf",
+            "sell_value": 4246569,
+            "net_value": -4101460,
+            "icon": null,
+            "name": "炒新一族",
+            "id": "YZ00022",
+            "buy_value": 145109
+          },
+          {
+            "hid": null,
+            "sell_value": 235813,
+            "net_value": 52737665.48,
+            "icon": null,
+            "name": "六一中路",
+            "id": "YZ00083",
+            "buy_value": 52973478.48
+          },
+          {
+            "hid": "5c8b6f7b802f64ca009bdbe0",
+            "sell_value": 10551804,
+            "net_value": -10539666,
+            "icon": null,
+            "name": "广东帮",
+            "id": "YZ00021",
+            "buy_value": 12138
+          }
+        ],
+        "net_value": 38202724.24,
+        "net_rate": 0.10490145,
+        "limit_reason": "电气绝缘材料+新能源汽车+有机硅+光伏",
+        "stock_code": "001255",
+        "org_net_value": null,
+        "hot_money_net_value": 38096539.48
+      },
+      {
+        "hot_money_net_rate": 0.10838843,
+        "sell_value": 52582296.76,
+        "amount": 347871847,
+        "stock_name": "华嵘控股",
+        "change": -0.024672,
+        "concept_list": [
+          {
+            "code": "885946",
+            "name": "传感器",
+            "market_id": "48"
+          },
+          {
+            "code": "886041",
+            "name": "数据要素",
+            "market_id": "48"
+          },
+          {
+            "code": "885378",
+            "name": "智慧城市",
+            "market_id": "48"
+          }
+        ],
+        "market_id": "17",
+        "buy_value": 79610529,
+        "hot_rank": 258,
+        "tags": [
+          {
+            "color": "red",
+            "name": "炒新一族买",
+            "id": null,
+            "type": "hot_money"
+          },
+          {
+            "color": "red",
+            "name": "思明南路买",
+            "id": null,
+            "type": "hot_money"
+          },
+          {
+            "color": "green",
+            "name": "温州帮卖",
+            "id": null,
+            "type": "hot_money"
+          },
+          {
+            "color": "green",
+            "name": "量化基金卖",
+            "id": null,
+            "type": "hot_money"
+          }
+        ],
+        "range_days": 1,
+        "hot_money_items": [
+          {
+            "hid": "5c8b6f80802f64f7009bdbdf",
+            "sell_value": null,
+            "net_value": 57528465,
+            "icon": null,
+            "name": "炒新一族",
+            "id": "YZ00022",
+            "buy_value": 57528465
+          },
+          {
+            "hid": "5c8b6f55802f64e1009bdbdf",
+            "sell_value": 10545313,
+            "net_value": -10545313,
+            "icon": null,
+            "name": "温州帮",
+            "id": "YZ00015",
+            "buy_value": null
+          },
+          {
+            "hid": null,
+            "sell_value": null,
+            "net_value": 7498139,
+            "icon": null,
+            "name": "思明南路",
+            "id": "YZ00071",
+            "buy_value": 7498139
+          },
+          {
+            "hid": "62501b8dc760abc700e4287a",
+            "sell_value": 16776007.74,
+            "net_value": -16776007.74,
+            "icon": null,
+            "name": "量化基金",
+            "id": "YZ00049",
+            "buy_value": null
+          }
+        ],
+        "net_value": 27028232.24,
+        "net_rate": 0.07769595,
+        "limit_reason": null,
+        "stock_code": "600421",
+        "org_net_value": null,
+        "hot_money_net_value": 37705283.26
+      },
+      {
+        "hot_money_net_rate": 0.08350878,
+        "sell_value": 53506403.5,
+        "amount": 355555208,
+        "stock_name": "敏芯股份",
+        "change": 0.200039,
+        "concept_list": [
+          {
+            "code": "885897",
+            "name": "中芯国际概念",
+            "market_id": "48"
+          },
+          {
+            "code": "885868",
+            "name": "无线耳机",
+            "market_id": "48"
+          },
+          {
+            "code": "885800",
+            "name": "消费电子概念",
+            "market_id": "48"
+          }
+        ],
+        "market_id": "17",
+        "buy_value": 55586224.56,
+        "hot_rank": 451,
+        "tags": [
+          {
+            "color": "red",
+            "name": "量化基金买",
+            "id": null,
+            "type": "hot_money"
+          },
+          {
+            "color": "red",
+            "name": "北京帮买",
+            "id": null,
+            "type": "hot_money"
+          }
+        ],
+        "range_days": 1,
+        "hot_money_items": [
+          {
+            "hid": "5c8b6f9b802f64c3009bdbdf",
+            "sell_value": null,
+            "net_value": 6285360.77,
+            "icon": null,
+            "name": "北京帮",
+            "id": "YZ00028",
+            "buy_value": 6285360.77
+          },
+          {
+            "hid": "62501b8dc760abc700e4287a",
+            "sell_value": null,
+            "net_value": 23406620.26,
+            "icon": null,
+            "name": "量化基金",
+            "id": "YZ00049",
+            "buy_value": 23406620.26
+          }
+        ],
+        "net_value": 2079821.06,
+        "net_rate": 0.0058495,
+        "limit_reason": "声学传感器（可用于AI语音助手）+MEMS传感器+新型烟草+机器人",
+        "stock_code": "688286",
+        "org_net_value": -10394291.08,
+        "hot_money_net_value": 29691981.03
+      },
+      {
+        "hot_money_net_rate": 0.04289946,
+        "sell_value": 53083569.92,
+        "amount": 667016650,
+        "stock_name": "奥瑞德",
+        "change": 0.100775,
+        "concept_list": [
+          {
+            "code": "885849",
+            "name": "黑龙江自贸区",
+            "market_id": "48"
+          },
+          {
+            "code": "885738",
+            "name": "OLED",
+            "market_id": "48"
+          },
+          {
+            "code": "886050",
+            "name": "算力租赁",
+            "market_id": "48"
+          }
+        ],
+        "market_id": "17",
+        "buy_value": 82240968.8,
+        "hot_rank": 145,
+        "tags": [
+          {
+            "color": "red",
+            "name": "量化基金买",
+            "id": null,
+            "type": "hot_money"
+          }
+        ],
+        "range_days": 1,
+        "hot_money_items": [
+          {
+            "hid": "62501b8dc760abc700e4287a",
+            "sell_value": 20597475,
+            "net_value": 28614652.8,
+            "icon": null,
+            "name": "量化基金",
+            "id": "YZ00049",
+            "buy_value": 49212127.8
+          }
+        ],
+        "net_value": 29157398.88,
+        "net_rate": 0.04371315,
+        "limit_reason": "算力+蓝宝石+摘帽+低价股",
+        "stock_code": "600666",
+        "org_net_value": null,
+        "hot_money_net_value": 28614652.8
+      },
+      {
+        "hot_money_net_rate": 0.00923271,
+        "sell_value": 170937640.56,
+        "amount": 2839355117.33,
+        "stock_name": "南方精工",
+        "change": 0.100141,
+        "concept_list": [
+          {
+            "code": "885997",
+            "name": "比亚迪概念",
+            "market_id": "48"
+          },
+          {
+            "code": "886008",
+            "name": "减速器",
+            "market_id": "48"
+          },
+          {
+            "code": "885517",
+            "name": "机器人概念",
+            "market_id": "48"
+          }
+        ],
+        "market_id": "33",
+        "buy_value": 207109418.84,
+        "hot_rank": 39,
+        "tags": [
+          {
+            "color": "orange",
+            "name": "3日",
+            "id": null,
+            "type": "range"
+          },
+          {
+            "color": "red",
+            "name": "量化打板买",
+            "id": null,
+            "type": "hot_money"
+          }
+        ],
+        "range_days": 3,
+        "hot_money_items": [
+          {
+            "hid": "62501d41c760abe900e42879",
+            "sell_value": 11101437,
+            "net_value": 26214940,
+            "icon": null,
+            "name": "量化打板",
+            "id": "YZ00054",
+            "buy_value": 37316377
+          }
+        ],
+        "net_value": 36171778.28,
+        "net_rate": 0.01273943,
+        "limit_reason": "减速器+汽车零部件+无人机",
+        "stock_code": "002553",
+        "org_net_value": 10716888.44,
+        "hot_money_net_value": 26214940
+      },
+      {
+        "hot_money_net_rate": 0.21674119,
+        "sell_value": 17266402,
+        "amount": 115713436,
+        "stock_name": "丹化科技",
+        "change": 0.10101,
+        "concept_list": [
+          {
+            "code": "885901",
+            "name": "可降解塑料",
+            "market_id": "48"
+          },
+          {
+            "code": "885398",
+            "name": "煤化工概念",
+            "market_id": "48"
+          },
+          {
+            "code": "883436",
+            "name": "周期",
+            "market_id": "48"
+          }
+        ],
+        "market_id": "17",
+        "buy_value": 35873787,
+        "hot_rank": 109,
+        "tags": [
+          {
+            "color": "red",
+            "name": "炒股养家买",
+            "id": null,
+            "type": "hot_money"
+          },
+          {
+            "color": "red",
+            "name": "量化打板买",
+            "id": null,
+            "type": "hot_money"
+          },
+          {
+            "color": "red",
+            "name": "低位挖掘买",
+            "id": null,
+            "type": "hot_money"
+          }
+        ],
+        "range_days": 1,
+        "hot_money_items": [
+          {
+            "hid": null,
+            "sell_value": null,
+            "net_value": 4004769,
+            "icon": null,
+            "name": "低位挖掘",
+            "id": "YZ00076",
+            "buy_value": 4004769
+          },
+          {
+            "hid": "62501d41c760abe900e42879",
+            "sell_value": null,
+            "net_value": 5450712,
+            "icon": null,
+            "name": "量化打板",
+            "id": "YZ00054",
+            "buy_value": 5450712
+          },
+          {
+            "hid": "5c8b6f3d802f64c7009bdbde",
+            "sell_value": null,
+            "net_value": 15624387,
+            "icon": null,
+            "name": "炒股养家",
+            "id": "YZ00011",
+            "buy_value": 15624387
+          }
+        ],
+        "net_value": 18607385,
+        "net_rate": 0.16080574,
+        "limit_reason": "乙二醇+煤化工+股份转让",
+        "stock_code": "600844",
+        "org_net_value": -5824197,
+        "hot_money_net_value": 25079868
+      },
+      {
+        "hot_money_net_rate": 0.01742466,
+        "sell_value": 80171654.79,
+        "amount": 1340713385,
+        "stock_name": "宝泰隆",
+        "change": 0.100746,
+        "concept_list": [
+          {
+            "code": "885781",
+            "name": "石墨电极",
+            "market_id": "48"
+          },
+          {
+            "code": "885849",
+            "name": "黑龙江自贸区",
+            "market_id": "48"
+          },
+          {
+            "code": "885919",
+            "name": "碳中和",
+            "market_id": "48"
+          }
+        ],
+        "market_id": "17",
+        "buy_value": 104963878.65,
+        "hot_rank": 88,
+        "tags": [
+          {
+            "color": "orange",
+            "name": "3日",
+            "id": null,
+            "type": "range"
+          },
+          {
+            "color": "red",
+            "name": "量化基金买",
+            "id": null,
+            "type": "hot_money"
+          }
+        ],
+        "range_days": 3,
+        "hot_money_items": [
+          {
+            "hid": "62501b8dc760abc700e4287a",
+            "sell_value": null,
+            "net_value": 23361474,
+            "icon": null,
+            "name": "量化基金",
+            "id": "YZ00049",
+            "buy_value": 23361474
+          }
+        ],
+        "net_value": 24792223.86,
+        "net_rate": 0.01849181,
+        "limit_reason": "煤炭+石墨烯+AI眼镜+低价股+破净股",
+        "stock_code": "601011",
+        "org_net_value": null,
+        "hot_money_net_value": 23361474
+      },
+      {
+        "hot_money_net_rate": 0.01859396,
+        "sell_value": 103961281.3,
+        "amount": 1233927373,
+        "stock_name": "水发燃气",
+        "change": 0.06399,
+        "concept_list": [
+          {
+            "code": "885823",
+            "name": "氢能源",
+            "market_id": "48"
+          },
+          {
+            "code": "885430",
+            "name": "天然气",
+            "market_id": "48"
+          },
+          {
+            "code": "885494",
+            "name": "一带一路",
+            "market_id": "48"
+          }
+        ],
+        "market_id": "17",
+        "buy_value": 109875799.26,
+        "hot_rank": 327,
+        "tags": [
+          {
+            "color": "orange",
+            "name": "3日",
+            "id": null,
+            "type": "range"
+          },
+          {
+            "color": "red",
+            "name": "量化基金买",
+            "id": null,
+            "type": "hot_money"
+          },
+          {
+            "color": "orange",
+            "name": "思明南路T",
+            "id": null,
+            "type": "hot_money"
+          },
+          {
+            "color": "orange",
+            "name": "宁波桑田路T",
+            "id": null,
+            "type": "hot_money"
+          },
+          {
+            "color": "orange",
+            "name": "章盟主T",
+            "id": null,
+            "type": "hot_money"
+          }
+        ],
+        "range_days": 3,
+        "hot_money_items": [
+          {
+            "hid": "5ec28267d05d0edb0058eafb",
+            "sell_value": 13588396.3,
+            "net_value": 374873.8,
+            "icon": null,
+            "name": "宁波桑田路",
+            "id": "YZ00031",
+            "buy_value": 13963270.1
+          },
+          {
+            "hid": "5c8b6f00802f64e5009bdbe1",
+            "sell_value": 21932204.2,
+            "net_value": -1280659.04,
+            "icon": null,
+            "name": "章盟主",
+            "id": "YZ00002",
+            "buy_value": 20651545.16
+          },
+          {
+            "hid": null,
+            "sell_value": 29294194,
+            "net_value": 1805831,
+            "icon": null,
+            "name": "思明南路",
+            "id": "YZ00071",
+            "buy_value": 31100025
+          },
+          {
+            "hid": "62501b8dc760abc700e4287a",
+            "sell_value": 22117405.8,
+            "net_value": 22043553.2,
+            "icon": null,
+            "name": "量化基金",
+            "id": "YZ00049",
+            "buy_value": 44160959
+          }
+        ],
+        "net_value": 5914517.96,
+        "net_rate": 0.00479325,
+        "limit_reason": null,
+        "stock_code": "603318",
+        "org_net_value": null,
+        "hot_money_net_value": 22943598.96
+      },
+      {
+        "hot_money_net_rate": 0.08158147,
+        "sell_value": 34609353.8,
+        "amount": 196191649,
+        "stock_name": "华塑股份",
+        "change": 0.101563,
+        "concept_list": [
+          {
+            "code": "885901",
+            "name": "可降解塑料",
+            "market_id": "48"
+          },
+          {
+            "code": "885531",
+            "name": "光伏概念",
+            "market_id": "48"
+          },
+          {
+            "code": "886021",
+            "name": "国企改革",
+            "market_id": "48"
+          }
+        ],
+        "market_id": "17",
+        "buy_value": 38163651,
+        "hot_rank": 127,
+        "tags": [
+          {
+            "color": "red",
+            "name": "温州帮买",
+            "id": null,
+            "type": "hot_money"
+          },
+          {
+            "color": "red",
+            "name": "量化基金买",
+            "id": null,
+            "type": "hot_money"
+          }
+        ],
+        "range_days": 1,
+        "hot_money_items": [
+          {
+            "hid": "5c8b6f55802f64e1009bdbdf",
+            "sell_value": null,
+            "net_value": 11887666,
+            "icon": null,
+            "name": "温州帮",
+            "id": "YZ00015",
+            "buy_value": 11887666
+          },
+          {
+            "hid": "62501b8dc760abc700e4287a",
+            "sell_value": null,
+            "net_value": 4117937,
+            "icon": null,
+            "name": "量化基金",
+            "id": "YZ00049",
+            "buy_value": 4117937
+          }
+        ],
+        "net_value": 3554297.2,
+        "net_rate": 0.01811646,
+        "limit_reason": "化工+国企改革+低价股",
+        "stock_code": "600935",
+        "org_net_value": null,
+        "hot_money_net_value": 16005603
+      },
+      {
+        "hot_money_net_rate": 0.01159532,
+        "sell_value": 73980212.24,
+        "amount": 1221647322,
+        "stock_name": "兰生股份",
+        "change": -0.031008,
+        "concept_list": [
+          {
+            "code": "885493",
+            "name": "上海国企改革",
+            "market_id": "48"
+          },
+          {
+            "code": "885620",
+            "name": "参股券商",
+            "market_id": "48"
+          },
+          {
+            "code": "885615",
+            "name": "体育产业",
+            "market_id": "48"
+          }
+        ],
+        "market_id": "17",
+        "buy_value": 78267903.44,
+        "hot_rank": 98,
+        "tags": [
+          {
+            "color": "red",
+            "name": "北京中关村买",
+            "id": null,
+            "type": "hot_money"
+          }
+        ],
+        "range_days": 1,
+        "hot_money_items": [
+          {
+            "hid": "635fc62d3d41d2df00cae1d2",
+            "sell_value": null,
+            "net_value": 14165395,
+            "icon": null,
+            "name": "北京中关村",
+            "id": "YZ00064",
+            "buy_value": 14165395
+          }
+        ],
+        "net_value": 4287691.2,
+        "net_rate": 0.00350976,
+        "limit_reason": null,
+        "stock_code": "600826",
+        "org_net_value": null,
+        "hot_money_net_value": 14165395
+      },
+      {
+        "hot_money_net_rate": 0.00958971,
+        "sell_value": 80096422.9,
+        "amount": 1444946216.37,
+        "stock_name": "东方智造",
+        "change": 0.100649,
+        "concept_list": [
+          {
+            "code": "885418",
+            "name": "文化传媒概念",
+            "market_id": "48"
+          },
+          {
+            "code": "885915",
+            "name": "物业管理",
+            "market_id": "48"
+          },
+          {
+            "code": "885770",
+            "name": "智能物流",
+            "market_id": "48"
+          }
+        ],
+        "market_id": "33",
+        "buy_value": 103590778.72,
+        "hot_rank": 35,
+        "tags": [
+          {
+            "color": "orange",
+            "name": "3日",
+            "id": null,
+            "type": "range"
+          },
+          {
+            "color": "red",
+            "name": "低位挖掘买",
+            "id": null,
+            "type": "hot_money"
+          }
+        ],
+        "range_days": 3,
+        "hot_money_items": [
+          {
+            "hid": null,
+            "sell_value": 543305,
+            "net_value": 13856618.6,
+            "icon": null,
+            "name": "低位挖掘",
+            "id": "YZ00076",
+            "buy_value": 14399923.6
+          }
+        ],
+        "net_value": 23494355.82,
+        "net_rate": 0.01625967,
+        "limit_reason": "芯片+智能制造+物业管理",
+        "stock_code": "002175",
+        "org_net_value": 2377243.26,
+        "hot_money_net_value": 13856618.6
+      },
+      {
+        "hot_money_net_rate": 0.01553158,
+        "sell_value": 250439423.47,
+        "amount": 765626816.86,
+        "stock_name": "天津普林",
+        "change": -0.099803,
+        "concept_list": [
+          {
+            "code": "885700",
+            "name": "军工",
+            "market_id": "48"
+          },
+          {
+            "code": "885959",
+            "name": "PCB概念",
+            "market_id": "48"
+          },
+          {
+            "code": "885809",
+            "name": "柔性屏(折叠屏)",
+            "market_id": "48"
+          }
+        ],
+        "market_id": "33",
+        "buy_value": 88024142,
+        "hot_rank": 69,
+        "tags": [
+          {
+            "color": "red",
+            "name": "成都系买",
+            "id": null,
+            "type": "hot_money"
+          }
+        ],
+        "range_days": 1,
+        "hot_money_items": [
+          {
+            "hid": "5c8b6f4b802f644d049bdbde",
+            "sell_value": 135905,
+            "net_value": 11891391,
+            "icon": null,
+            "name": "成都系",
+            "id": "YZ00013",
+            "buy_value": 12027296
+          }
+        ],
+        "net_value": -162415281.47,
+        "net_rate": -0.21213374,
+        "limit_reason": null,
+        "stock_code": "002134",
+        "org_net_value": 8819352,
+        "hot_money_net_value": 11891391
+      },
+      {
+        "hot_money_net_rate": 0.01782543,
+        "sell_value": 36268066.62,
+        "amount": 556016928,
+        "stock_name": "东方环宇",
+        "change": 0.099947,
+        "concept_list": [
+          {
+            "code": "885430",
+            "name": "天然气",
+            "market_id": "48"
+          },
+          {
+            "code": "885345",
+            "name": "新疆振兴",
+            "market_id": "48"
+          },
+          {
+            "code": "886072",
+            "name": "高股息精选",
+            "market_id": "48"
+          }
+        ],
+        "market_id": "17",
+        "buy_value": 38244588,
+        "hot_rank": 96,
+        "tags": [
+          {
+            "color": "orange",
+            "name": "3日",
+            "id": null,
+            "type": "range"
+          },
+          {
+            "color": "red",
+            "name": "玉兰路买",
+            "id": null,
+            "type": "hot_money"
+          },
+          {
+            "color": "orange",
+            "name": "量化基金T",
+            "id": null,
+            "type": "hot_money"
+          }
+        ],
+        "range_days": 3,
+        "hot_money_items": [
+          {
+            "hid": "5f8ed5d8107589ea00b9b1a5",
+            "sell_value": null,
+            "net_value": 6901785,
+            "icon": null,
+            "name": "玉兰路",
+            "id": "YZ00038",
+            "buy_value": 6901785
+          },
+          {
+            "hid": "62501b8dc760abc700e4287a",
+            "sell_value": 16235083.62,
+            "net_value": 3009457.38,
+            "icon": null,
+            "name": "量化基金",
+            "id": "YZ00049",
+            "buy_value": 19244541
+          }
+        ],
+        "net_value": 1976521.38,
+        "net_rate": 0.00355479,
+        "limit_reason": "燃气+新疆振兴+高股息",
+        "stock_code": "603706",
+        "org_net_value": -7891248,
+        "hot_money_net_value": 9911242.38
+      },
+      {
+        "hot_money_net_rate": 0.01314248,
+        "sell_value": 76808687.29,
+        "amount": 653062576.99,
+        "stock_name": "东方碳素",
+        "change": 0.297092,
+        "concept_list": [],
+        "market_id": "151",
+        "buy_value": 62496358.34,
+        "hot_rank": 467,
+        "tags": [
+          {
+            "color": "red",
+            "name": "bike770买",
+            "id": null,
+            "type": "hot_money"
+          }
+        ],
+        "range_days": 1,
+        "hot_money_items": [
+          {
+            "hid": "627d053a089fafee008c6186",
+            "sell_value": 67971.36,
+            "net_value": 8582860.89,
+            "icon": null,
+            "name": "bike770",
+            "id": "YZ00057",
+            "buy_value": 8650832.25
+          }
+        ],
+        "net_value": -14312328.95,
+        "net_rate": -0.02191571,
+        "limit_reason": null,
+        "stock_code": "832175",
+        "org_net_value": null,
+        "hot_money_net_value": 8582860.89
+      },
+      {
+        "hot_money_net_rate": 0.00420784,
+        "sell_value": 71714806.02,
+        "amount": 1433411160,
+        "stock_name": "大东方",
+        "change": 0.101099,
+        "concept_list": [
+          {
+            "code": "885911",
+            "name": "社区团购",
+            "market_id": "48"
+          },
+          {
+            "code": "885490",
+            "name": "民营医院",
+            "market_id": "48"
+          },
+          {
+            "code": "885951",
+            "name": "预制菜",
+            "market_id": "48"
+          }
+        ],
+        "market_id": "17",
+        "buy_value": 117192220,
+        "hot_rank": 51,
+        "tags": [
+          {
+            "color": "orange",
+            "name": "3日",
+            "id": null,
+            "type": "range"
+          },
+          {
+            "color": "red",
+            "name": "低位挖掘买",
+            "id": null,
+            "type": "hot_money"
+          },
+          {
+            "color": "green",
+            "name": "量化基金卖",
+            "id": null,
+            "type": "hot_money"
+          }
+        ],
+        "range_days": 3,
+        "hot_money_items": [
+          {
+            "hid": null,
+            "sell_value": null,
+            "net_value": 19867237,
+            "icon": null,
+            "name": "低位挖掘",
+            "id": "YZ00076",
+            "buy_value": 19867237
+          },
+          {
+            "hid": "62501b8dc760abc700e4287a",
+            "sell_value": 37118449.02,
+            "net_value": -13835679.02,
+            "icon": null,
+            "name": "量化基金",
+            "id": "YZ00049",
+            "buy_value": 23282770
+          }
+        ],
+        "net_value": 45477413.98,
+        "net_rate": 0.03172671,
+        "limit_reason": "低市净率+百货零售+医疗健康+老字号",
+        "stock_code": "600327",
+        "org_net_value": null,
+        "hot_money_net_value": 6031557.98
+      },
+      {
+        "hot_money_net_rate": 0.00125501,
+        "sell_value": 295797658.81,
+        "amount": 3765297005.4,
+        "stock_name": "美利云",
+        "change": 0.06117,
+        "concept_list": [
+          {
+            "code": "885977",
+            "name": "国资云",
+            "market_id": "48"
+          },
+          {
+            "code": "885957",
+            "name": "东数西算(算力)",
+            "market_id": "48"
+          },
+          {
+            "code": "885887",
+            "name": "数据中心",
+            "market_id": "48"
+          }
+        ],
+        "market_id": "33",
+        "buy_value": 422421314.48,
+        "hot_rank": 65,
+        "tags": [
+          {
+            "color": "orange",
+            "name": "3日",
+            "id": null,
+            "type": "range"
+          },
+          {
+            "color": "orange",
+            "name": "量化打板T",
+            "id": null,
+            "type": "hot_money"
+          }
+        ],
+        "range_days": 3,
+        "hot_money_items": [
+          {
+            "hid": "62501d41c760abe900e42879",
+            "sell_value": 35528174.74,
+            "net_value": 4725476.56,
+            "icon": null,
+            "name": "量化打板",
+            "id": "YZ00054",
+            "buy_value": 40253651.3
+          }
+        ],
+        "net_value": 126623655.67,
+        "net_rate": 0.03362913,
+        "limit_reason": null,
+        "stock_code": "000815",
+        "org_net_value": 50097148.55,
+        "hot_money_net_value": 4725476.56
+      },
+      {
+        "hot_money_net_rate": 0.0046257,
+        "sell_value": 50090714.9,
+        "amount": 750239646,
+        "stock_name": "晋拓股份",
+        "change": 0.01334,
+        "concept_list": [
+          {
+            "code": "885431",
+            "name": "新能源汽车",
+            "market_id": "48"
+          },
+          {
+            "code": "885517",
+            "name": "机器人概念",
+            "market_id": "48"
+          },
+          {
+            "code": "885736",
+            "name": "无人驾驶",
+            "market_id": "48"
+          }
+        ],
+        "market_id": "17",
+        "buy_value": 42184927,
+        "hot_rank": 296,
+        "tags": [
+          {
+            "color": "red",
+            "name": "南京帮买",
+            "id": null,
+            "type": "hot_money"
+          },
+          {
+            "color": "green",
+            "name": "低位挖掘卖",
+            "id": null,
+            "type": "hot_money"
+          }
+        ],
+        "range_days": 1,
+        "hot_money_items": [
+          {
+            "hid": null,
+            "sell_value": 8453553.9,
+            "net_value": -8453553.9,
+            "icon": null,
+            "name": "低位挖掘",
+            "id": "YZ00076",
+            "buy_value": null
+          },
+          {
+            "hid": null,
+            "sell_value": null,
+            "net_value": 11923936,
+            "icon": null,
+            "name": "南京帮",
+            "id": "YZ00085",
+            "buy_value": 11923936
+          }
+        ],
+        "net_value": -7905787.9,
+        "net_rate": -0.01053768,
+        "limit_reason": null,
+        "stock_code": "603211",
+        "org_net_value": null,
+        "hot_money_net_value": 3470382.1
+      },
+      {
+        "hot_money_net_rate": 0.01305228,
+        "sell_value": 33997164.33,
+        "amount": 220610389,
+        "stock_name": "安邦护卫",
+        "change": -0.005028,
+        "concept_list": [
+          {
+            "code": "885905",
+            "name": "注册制次新股",
+            "market_id": "48"
+          },
+          {
+            "code": "885586",
+            "name": "职业教育",
+            "market_id": "48"
+          },
+          {
+            "code": "886067",
+            "name": "低空经济",
+            "market_id": "48"
+          }
+        ],
+        "market_id": "17",
+        "buy_value": 19917772.48,
+        "hot_rank": 1170,
+        "tags": [
+          {
+            "color": "orange",
+            "name": "量化基金T",
+            "id": null,
+            "type": "hot_money"
+          }
+        ],
+        "range_days": 1,
+        "hot_money_items": [
+          {
+            "hid": "62501b8dc760abc700e4287a",
+            "sell_value": 8357660.81,
+            "net_value": 2879468.19,
+            "icon": null,
+            "name": "量化基金",
+            "id": "YZ00049",
+            "buy_value": 11237129
+          }
+        ],
+        "net_value": -14079391.85,
+        "net_rate": -0.06382017,
+        "limit_reason": null,
+        "stock_code": "603373",
+        "org_net_value": 3640121.48,
+        "hot_money_net_value": 2879468.19
+      },
+      {
+        "hot_money_net_rate": 0.00006936,
+        "sell_value": 665725200,
+        "amount": 2197718334.07,
+        "stock_name": "瀛通转债",
+        "change": 0.200001,
+        "concept_list": [],
+        "market_id": "35",
+        "buy_value": 666854536,
+        "hot_rank": null,
+        "tags": [
+          {
+            "color": "orange",
+            "name": "温州帮T",
+            "id": null,
+            "type": "hot_money"
+          }
+        ],
+        "range_days": 1,
+        "hot_money_items": [
+          {
+            "hid": "5c8b6f55802f64e1009bdbdf",
+            "sell_value": 103795380,
+            "net_value": 152433,
+            "icon": null,
+            "name": "温州帮",
+            "id": "YZ00015",
+            "buy_value": 103947813
+          }
+        ],
+        "net_value": 1129336,
+        "net_rate": 0.00051387,
+        "limit_reason": null,
+        "stock_code": "128118",
+        "org_net_value": null,
+        "hot_money_net_value": 152433
+      },
+      {
+        "hot_money_net_rate": -0.00013223,
+        "sell_value": 27820440,
+        "amount": 134307934,
+        "stock_name": "豪24转债",
+        "change": 0.4619,
+        "concept_list": [],
+        "market_id": "19",
+        "buy_value": 30016300,
+        "hot_rank": null,
+        "tags": [
+          {
+            "color": "orange",
+            "name": "量化打板T",
+            "id": null,
+            "type": "hot_money"
+          }
+        ],
+        "range_days": 1,
+        "hot_money_items": [
+          {
+            "hid": "62501d41c760abe900e42879",
+            "sell_value": 7332410,
+            "net_value": -17760,
+            "icon": null,
+            "name": "量化打板",
+            "id": "YZ00054",
+            "buy_value": 7314650
+          }
+        ],
+        "net_value": 2195860,
+        "net_rate": 0.01634944,
+        "limit_reason": null,
+        "stock_code": "113690",
+        "org_net_value": null,
+        "hot_money_net_value": -17760
+      },
+      {
+        "hot_money_net_rate": -0.00003327,
+        "sell_value": 514754360,
+        "amount": 2294478346,
+        "stock_name": "东时转债",
+        "change": 0.200002,
+        "concept_list": [],
+        "market_id": "19",
+        "buy_value": 519677350,
+        "hot_rank": null,
+        "tags": [
+          {
+            "color": "orange",
+            "name": "量化打板T",
+            "id": null,
+            "type": "hot_money"
+          }
+        ],
+        "range_days": 1,
+        "hot_money_items": [
+          {
+            "hid": "62501d41c760abe900e42879",
+            "sell_value": 169231830,
+            "net_value": -76330,
+            "icon": null,
+            "name": "量化打板",
+            "id": "YZ00054",
+            "buy_value": 169155500
+          }
+        ],
+        "net_value": 4922990,
+        "net_rate": 0.00214558,
+        "limit_reason": null,
+        "stock_code": "113575",
+        "org_net_value": null,
+        "hot_money_net_value": -76330
+      },
+      {
+        "hot_money_net_rate": -0.00005876,
+        "sell_value": 299833755.84,
+        "amount": 4172040930.14,
+        "stock_name": "汇金科技",
+        "change": 0.125091,
+        "concept_list": [
+          {
+            "code": "885759",
+            "name": "人脸识别",
+            "market_id": "48"
+          },
+          {
+            "code": "885456",
+            "name": "互联网金融",
+            "market_id": "48"
+          },
+          {
+            "code": "885459",
+            "name": "网络安全",
+            "market_id": "48"
+          }
+        ],
+        "market_id": "33",
+        "buy_value": 373927434,
+        "hot_rank": 102,
+        "tags": [
+          {
+            "color": "orange",
+            "name": "3日",
+            "id": null,
+            "type": "range"
+          },
+          {
+            "color": "orange",
+            "name": "量化基金T",
+            "id": null,
+            "type": "hot_money"
+          }
+        ],
+        "range_days": 3,
+        "hot_money_items": [
+          {
+            "hid": "62501b8dc760abc700e4287a",
+            "sell_value": 45584027.49,
+            "net_value": -245141.19,
+            "icon": null,
+            "name": "量化基金",
+            "id": "YZ00049",
+            "buy_value": 45338886.3
+          }
+        ],
+        "net_value": 74093678.16,
+        "net_rate": 0.01775958,
+        "limit_reason": null,
+        "stock_code": "300561",
+        "org_net_value": 73748791.82,
+        "hot_money_net_value": -245141.19
+      },
+      {
+        "hot_money_net_rate": -0.39739862,
+        "sell_value": 1259674.52,
+        "amount": 1476637.38,
+        "stock_name": "晨鸣B",
+        "change": -0.102941,
+        "concept_list": [],
+        "market_id": "34",
+        "buy_value": 485475.46,
+        "hot_rank": null,
+        "tags": [
+          {
+            "color": "green",
+            "name": "章盟主卖",
+            "id": null,
+            "type": "hot_money"
+          }
+        ],
+        "range_days": 1,
+        "hot_money_items": [
+          {
+            "hid": "5c8b6f00802f64e5009bdbe1",
+            "sell_value": 586813.66,
+            "net_value": -586813.66,
+            "icon": null,
+            "name": "章盟主",
+            "id": "YZ00002",
+            "buy_value": 0
+          }
+        ],
+        "net_value": -774199.06,
+        "net_rate": -0.5242987,
+        "limit_reason": null,
+        "stock_code": "200488",
+        "org_net_value": null,
+        "hot_money_net_value": -586813.66
+      },
+      {
+        "hot_money_net_rate": -0.00290766,
+        "sell_value": 60244349,
+        "amount": 755271187,
+        "stock_name": "返利科技",
+        "change": 0.036232,
+        "concept_list": [
+          {
+            "code": "885797",
+            "name": "百度概念",
+            "market_id": "48"
+          },
+          {
+            "code": "885910",
+            "name": "拼多多概念",
+            "market_id": "48"
+          },
+          {
+            "code": "885890",
+            "name": "抖音概念",
+            "market_id": "48"
+          }
+        ],
+        "market_id": "17",
+        "buy_value": 57061146.83,
+        "hot_rank": 233,
+        "tags": [
+          {
+            "color": "orange",
+            "name": "南京帮T",
+            "id": null,
+            "type": "hot_money"
+          }
+        ],
+        "range_days": 1,
+        "hot_money_items": [
+          {
+            "hid": null,
+            "sell_value": 25408213,
+            "net_value": -2196069,
+            "icon": null,
+            "name": "南京帮",
+            "id": "YZ00085",
+            "buy_value": 23212144
+          }
+        ],
+        "net_value": -3183202.17,
+        "net_rate": -0.00421465,
+        "limit_reason": null,
+        "stock_code": "600228",
+        "org_net_value": null,
+        "hot_money_net_value": -2196069
+      },
+      {
+        "hot_money_net_rate": -0.00025472,
+        "sell_value": 3437917724,
+        "amount": 13579766698.46,
+        "stock_name": "拓斯转债",
+        "change": 0.2,
+        "concept_list": [],
+        "market_id": "35",
+        "buy_value": 3425200233,
+        "hot_rank": null,
+        "tags": [
+          {
+            "color": "orange",
+            "name": "温州帮T",
+            "id": null,
+            "type": "hot_money"
+          },
+          {
+            "color": "orange",
+            "name": "量化打板T",
+            "id": null,
+            "type": "hot_money"
+          }
+        ],
+        "range_days": 1,
+        "hot_money_items": [
+          {
+            "hid": "5c8b6f55802f64e1009bdbdf",
+            "sell_value": 549337384,
+            "net_value": -317096,
+            "icon": null,
+            "name": "温州帮",
+            "id": "YZ00015",
+            "buy_value": 549020288
+          },
+          {
+            "hid": "62501d41c760abe900e42879",
+            "sell_value": 452783028,
+            "net_value": -3141876,
+            "icon": null,
+            "name": "量化打板",
+            "id": "YZ00054",
+            "buy_value": 449641152
+          }
+        ],
+        "net_value": -12717491,
+        "net_rate": -0.0009365,
+        "limit_reason": null,
+        "stock_code": "123101",
+        "org_net_value": null,
+        "hot_money_net_value": -3458972
+      },
+      {
+        "hot_money_net_rate": -0.00015428,
+        "sell_value": 6380792322,
+        "amount": 24770039743.64,
+        "stock_name": "拓斯转债",
+        "change": 0.2,
+        "concept_list": [],
+        "market_id": "35",
+        "buy_value": 6363316135,
+        "hot_rank": null,
+        "tags": [
+          {
+            "color": "orange",
+            "name": "3日",
+            "id": null,
+            "type": "range"
+          },
+          {
+            "color": "orange",
+            "name": "温州帮T",
+            "id": null,
+            "type": "hot_money"
+          },
+          {
+            "color": "orange",
+            "name": "量化打板T",
+            "id": null,
+            "type": "hot_money"
+          }
+        ],
+        "range_days": 3,
+        "hot_money_items": [
+          {
+            "hid": "5c8b6f55802f64e1009bdbdf",
+            "sell_value": 988334755,
+            "net_value": -954219,
+            "icon": null,
+            "name": "温州帮",
+            "id": "YZ00015",
+            "buy_value": 987380536
+          },
+          {
+            "hid": "62501d41c760abe900e42879",
+            "sell_value": 860861689,
+            "net_value": -2867388,
+            "icon": null,
+            "name": "量化打板",
+            "id": "YZ00054",
+            "buy_value": 857994301
+          }
+        ],
+        "net_value": -17476187,
+        "net_rate": -0.00070554,
+        "limit_reason": null,
+        "stock_code": "123101",
+        "org_net_value": null,
+        "hot_money_net_value": -3821607
+      },
+      {
+        "hot_money_net_rate": -0.03166579,
+        "sell_value": 27900022.24,
+        "amount": 121006656.21,
+        "stock_name": "驰诚股份",
+        "change": 0.299889,
+        "concept_list": [],
+        "market_id": "151",
+        "buy_value": 28562943.63,
+        "hot_rank": 753,
+        "tags": [
+          {
+            "color": "green",
+            "name": "温州帮卖",
+            "id": null,
+            "type": "hot_money"
+          }
+        ],
+        "range_days": 1,
+        "hot_money_items": [
+          {
+            "hid": "5c8b6f55802f64e1009bdbdf",
+            "sell_value": 3831770.92,
+            "net_value": -3831770.92,
+            "icon": null,
+            "name": "温州帮",
+            "id": "YZ00015",
+            "buy_value": 0
+          }
+        ],
+        "net_value": 662921.39,
+        "net_rate": 0.00547839,
+        "limit_reason": null,
+        "stock_code": "834407",
+        "org_net_value": null,
+        "hot_money_net_value": -3831770.92
+      },
+      {
+        "hot_money_net_rate": -0.01065217,
+        "sell_value": 57691798.53,
+        "amount": 699084456.88,
+        "stock_name": "科达自控",
+        "change": 0.09811,
+        "concept_list": [],
+        "market_id": "151",
+        "buy_value": 56080631.35,
+        "hot_rank": 712,
+        "tags": [
+          {
+            "color": "green",
+            "name": "bike770卖",
+            "id": null,
+            "type": "hot_money"
+          }
+        ],
+        "range_days": 1,
+        "hot_money_items": [
+          {
+            "hid": "627d053a089fafee008c6186",
+            "sell_value": 7514287.68,
+            "net_value": -7446768.38,
+            "icon": null,
+            "name": "bike770",
+            "id": "YZ00057",
+            "buy_value": 67519.3
+          }
+        ],
+        "net_value": -1611167.18,
+        "net_rate": -0.00230468,
+        "limit_reason": null,
+        "stock_code": "831832",
+        "org_net_value": null,
+        "hot_money_net_value": -7446768.38
+      },
+      {
+        "hot_money_net_rate": -0.00320489,
+        "sell_value": 188096748.94,
+        "amount": 2448090586.29,
+        "stock_name": "科大智能",
+        "change": 0.20019,
+        "concept_list": [
+          {
+            "code": "885938",
+            "name": "换电概念",
+            "market_id": "48"
+          },
+          {
+            "code": "886004",
+            "name": "虚拟电厂",
+            "market_id": "48"
+          },
+          {
+            "code": "885819",
+            "name": "电力物联网",
+            "market_id": "48"
+          }
+        ],
+        "market_id": "33",
+        "buy_value": 236198874.15,
+        "hot_rank": 25,
+        "tags": [
+          {
+            "color": "orange",
+            "name": "3日",
+            "id": null,
+            "type": "range"
+          },
+          {
+            "color": "orange",
+            "name": "湖州劳动路T",
+            "id": null,
+            "type": "hot_money"
+          },
+          {
+            "color": "orange",
+            "name": "成都系T",
+            "id": null,
+            "type": "hot_money"
+          }
+        ],
+        "range_days": 3,
+        "hot_money_items": [
+          {
+            "hid": "5c8b6f4b802f644d049bdbde",
+            "sell_value": 48751931,
+            "net_value": -5179283.68,
+            "icon": null,
+            "name": "成都系",
+            "id": "YZ00013",
+            "buy_value": 43572647.32
+          },
+          {
+            "hid": "5f8ed4d4107589ca00b9b1a6",
+            "sell_value": 30873915.16,
+            "net_value": -2666580.22,
+            "icon": null,
+            "name": "湖州劳动路",
+            "id": "YZ00035",
+            "buy_value": 28207334.94
+          }
+        ],
+        "net_value": 48102125.21,
+        "net_rate": 0.01964883,
+        "limit_reason": "回购+机器人+工业智能化+特斯拉",
+        "stock_code": "300222",
+        "org_net_value": null,
+        "hot_money_net_value": -7845863.9
+      },
+      {
+        "hot_money_net_rate": -0.01726992,
+        "sell_value": 71029253.93,
+        "amount": 575536517.63,
+        "stock_name": "夏厦精密",
+        "change": 0.04773,
+        "concept_list": [
+          {
+            "code": "886008",
+            "name": "减速器",
+            "market_id": "48"
+          },
+          {
+            "code": "885930",
+            "name": "工业母机",
+            "market_id": "48"
+          },
+          {
+            "code": "886069",
+            "name": "人形机器人",
+            "market_id": "48"
+          }
+        ],
+        "market_id": "33",
+        "buy_value": 34650398.21,
+        "hot_rank": 351,
+        "tags": [
+          {
+            "color": "green",
+            "name": "量化打板卖",
+            "id": null,
+            "type": "hot_money"
+          }
+        ],
+        "range_days": 1,
+        "hot_money_items": [
+          {
+            "hid": "62501d41c760abe900e42879",
+            "sell_value": 10024081.48,
+            "net_value": -9939467.48,
+            "icon": null,
+            "name": "量化打板",
+            "id": "YZ00054",
+            "buy_value": 84614
+          }
+        ],
+        "net_value": -36378855.72,
+        "net_rate": -0.0632086,
+        "limit_reason": null,
+        "stock_code": "001306",
+        "org_net_value": 7040368,
+        "hot_money_net_value": -9939467.48
+      },
+      {
+        "hot_money_net_rate": -0.0155128,
+        "sell_value": 116022064.13,
+        "amount": 713704135,
+        "stock_name": "热景生物",
+        "change": 0.200095,
+        "concept_list": [
+          {
+            "code": "885994",
+            "name": "猴痘概念",
+            "market_id": "48"
+          },
+          {
+            "code": "885879",
+            "name": "流感",
+            "market_id": "48"
+          },
+          {
+            "code": "885989",
+            "name": "肝炎概念",
+            "market_id": "48"
+          }
+        ],
+        "market_id": "17",
+        "buy_value": 122802316.79,
+        "hot_rank": 297,
+        "tags": [
+          {
+            "color": "green",
+            "name": "量化基金卖",
+            "id": null,
+            "type": "hot_money"
+          }
+        ],
+        "range_days": 1,
+        "hot_money_items": [
+          {
+            "hid": "62501b8dc760abc700e4287a",
+            "sell_value": 11071551.79,
+            "net_value": -11071551.79,
+            "icon": null,
+            "name": "量化基金",
+            "id": "YZ00049",
+            "buy_value": null
+          }
+        ],
+        "net_value": 6780252.66,
+        "net_rate": 0.00950009,
+        "limit_reason": "回购+体外诊断+阿尔兹海默",
+        "stock_code": "688068",
+        "org_net_value": 40927866.85,
+        "hot_money_net_value": -11071551.79
+      },
+      {
+        "hot_money_net_rate": -0.03930551,
+        "sell_value": 53004849,
+        "amount": 390957652.21,
+        "stock_name": "英特科技",
+        "change": 0.040329,
+        "concept_list": [
+          {
+            "code": "886010",
+            "name": "空气能热泵",
+            "market_id": "48"
+          },
+          {
+            "code": "885929",
+            "name": "专精特新",
+            "market_id": "48"
+          }
+        ],
+        "market_id": "33",
+        "buy_value": 27904899.95,
+        "hot_rank": 651,
+        "tags": [
+          {
+            "color": "red",
+            "name": "北京中关村买",
+            "id": null,
+            "type": "hot_money"
+          },
+          {
+            "color": "green",
+            "name": "炒股养家卖",
+            "id": null,
+            "type": "hot_money"
+          },
+          {
+            "color": "green",
+            "name": "温州帮卖",
+            "id": null,
+            "type": "hot_money"
+          }
+        ],
+        "range_days": 1,
+        "hot_money_items": [
+          {
+            "hid": "5c8b6f55802f64e1009bdbdf",
+            "sell_value": 14236979.1,
+            "net_value": -14052756.1,
+            "icon": null,
+            "name": "温州帮",
+            "id": "YZ00015",
+            "buy_value": 184223
+          },
+          {
+            "hid": "635fc62d3d41d2df00cae1d2",
+            "sell_value": 46301,
+            "net_value": 6356475.7,
+            "icon": null,
+            "name": "北京中关村",
+            "id": "YZ00064",
+            "buy_value": 6402776.7
+          },
+          {
+            "hid": "5c8b6f3d802f64c7009bdbde",
+            "sell_value": 7670509.8,
+            "net_value": -7670509.8,
+            "icon": null,
+            "name": "炒股养家",
+            "id": "YZ00011",
+            "buy_value": 0
+          }
+        ],
+        "net_value": -25099949.05,
+        "net_rate": -0.0642012,
+        "limit_reason": null,
+        "stock_code": "301399",
+        "org_net_value": -16286384.37,
+        "hot_money_net_value": -15366790.2
+      },
+      {
+        "hot_money_net_rate": -0.03037472,
+        "sell_value": 58675384.06,
+        "amount": 519015818.44,
+        "stock_name": "长江材料",
+        "change": 0.01769,
+        "concept_list": [
+          {
+            "code": "885372",
+            "name": "页岩气",
+            "market_id": "48"
+          },
+          {
+            "code": "885906",
+            "name": "核准制次新股",
+            "market_id": "48"
+          },
+          {
+            "code": "885537",
+            "name": "3D打印",
+            "market_id": "48"
+          },
+          {
+            "code": "886061",
+            "name": "长安汽车概念",
+            "market_id": "48"
+          }
+        ],
+        "market_id": "33",
+        "buy_value": 35785550.66,
+        "hot_rank": 343,
+        "tags": [
+          {
+            "color": "red",
+            "name": "量化基金买",
+            "id": null,
+            "type": "hot_money"
+          },
+          {
+            "color": "green",
+            "name": "上塘路卖",
+            "id": null,
+            "type": "hot_money"
+          }
+        ],
+        "range_days": 1,
+        "hot_money_items": [
+          {
+            "hid": "62501a88c760abd100e42879",
+            "sell_value": 20207253.74,
+            "net_value": -20207253.74,
+            "icon": null,
+            "name": "上塘路",
+            "id": "YZ00045",
+            "buy_value": 0
+          },
+          {
+            "hid": "62501b8dc760abc700e4287a",
+            "sell_value": 1227968,
+            "net_value": 4442293.36,
+            "icon": null,
+            "name": "量化基金",
+            "id": "YZ00049",
+            "buy_value": 5670261.36
+          }
+        ],
+        "net_value": -22889833.4,
+        "net_rate": -0.04410238,
+        "limit_reason": null,
+        "stock_code": "001296",
+        "org_net_value": 8782117.68,
+        "hot_money_net_value": -15764960.38
+      },
+      {
+        "hot_money_net_rate": -0.04180263,
+        "sell_value": 64181303.68,
+        "amount": 385849470,
+        "stock_name": "ST广物",
+        "change": 0.046465,
+        "concept_list": [
+          {
+            "code": "885988",
+            "name": "统一大市场",
+            "market_id": "48"
+          },
+          {
+            "code": "885345",
+            "name": "新疆振兴",
+            "market_id": "48"
+          },
+          {
+            "code": "885502",
+            "name": "冷链物流",
+            "market_id": "48"
+          }
+        ],
+        "market_id": "22",
+        "buy_value": 51684011.69,
+        "hot_rank": 2405,
+        "tags": [
+          {
+            "color": "orange",
+            "name": "3日",
+            "id": null,
+            "type": "range"
+          },
+          {
+            "color": "green",
+            "name": "量化基金卖",
+            "id": null,
+            "type": "hot_money"
+          }
+        ],
+        "range_days": 3,
+        "hot_money_items": [
+          {
+            "hid": "62501b8dc760abc700e4287a",
+            "sell_value": 29420591.68,
+            "net_value": -16129521.24,
+            "icon": null,
+            "name": "量化基金",
+            "id": "YZ00049",
+            "buy_value": 13291070.44
+          }
+        ],
+        "net_value": -12497291.99,
+        "net_rate": -0.03238904,
+        "limit_reason": null,
+        "stock_code": "600603",
+        "org_net_value": 6293256,
+        "hot_money_net_value": -16129521.24
+      },
+      {
+        "hot_money_net_rate": -0.01267757,
+        "sell_value": 189457106.94,
+        "amount": 1811173906.44,
+        "stock_name": "科大智能",
+        "change": 0.20019,
+        "concept_list": [
+          {
+            "code": "885938",
+            "name": "换电概念",
+            "market_id": "48"
+          },
+          {
+            "code": "886004",
+            "name": "虚拟电厂",
+            "market_id": "48"
+          },
+          {
+            "code": "885819",
+            "name": "电力物联网",
+            "market_id": "48"
+          }
+        ],
+        "market_id": "33",
+        "buy_value": 165594693.89,
+        "hot_rank": 25,
+        "tags": [
+          {
+            "color": "red",
+            "name": "曲江池买",
+            "id": null,
+            "type": "hot_money"
+          },
+          {
+            "color": "red",
+            "name": "流沙河买",
+            "id": null,
+            "type": "hot_money"
+          },
+          {
+            "color": "green",
+            "name": "湖州劳动路卖",
+            "id": null,
+            "type": "hot_money"
+          },
+          {
+            "color": "green",
+            "name": "成都系卖",
+            "id": null,
+            "type": "hot_money"
+          }
+        ],
+        "range_days": 1,
+        "hot_money_items": [
+          {
+            "hid": "5f8ed12d107589c400b9b1a4",
+            "sell_value": 2033748,
+            "net_value": 25807763,
+            "icon": null,
+            "name": "流沙河",
+            "id": "YZ00033",
+            "buy_value": 27841511
+          },
+          {
+            "hid": "5c8b6f4b802f644d049bdbde",
+            "sell_value": 48710669,
+            "net_value": -46386580,
+            "icon": null,
+            "name": "成都系",
+            "id": "YZ00013",
+            "buy_value": 2324089
+          },
+          {
+            "hid": null,
+            "sell_value": 0,
+            "net_value": 28034792,
+            "icon": null,
+            "name": "曲江池",
+            "id": "YZ00074",
+            "buy_value": 28034792
+          },
+          {
+            "hid": "5f8ed4d4107589ca00b9b1a6",
+            "sell_value": 30873915.16,
+            "net_value": -30417250.16,
+            "icon": null,
+            "name": "湖州劳动路",
+            "id": "YZ00035",
+            "buy_value": 456665
+          }
+        ],
+        "net_value": -23862413.05,
+        "net_rate": -0.01317511,
+        "limit_reason": "回购+机器人+工业智能化+特斯拉",
+        "stock_code": "300222",
+        "org_net_value": 22380071,
+        "hot_money_net_value": -22961275.16
+      },
+      {
+        "hot_money_net_rate": -0.00888663,
+        "sell_value": 290435051.43,
+        "amount": 2643729699.86,
+        "stock_name": "汇金科技",
+        "change": 0.125091,
+        "concept_list": [
+          {
+            "code": "885759",
+            "name": "人脸识别",
+            "market_id": "48"
+          },
+          {
+            "code": "885456",
+            "name": "互联网金融",
+            "market_id": "48"
+          },
+          {
+            "code": "885459",
+            "name": "网络安全",
+            "market_id": "48"
+          }
+        ],
+        "market_id": "33",
+        "buy_value": 287809206.64,
+        "hot_rank": 102,
+        "tags": [
+          {
+            "color": "orange",
+            "name": "量化基金T",
+            "id": null,
+            "type": "hot_money"
+          },
+          {
+            "color": "green",
+            "name": "消闲派卖",
+            "id": null,
+            "type": "hot_money"
+          }
+        ],
+        "range_days": 1,
+        "hot_money_items": [
+          {
+            "hid": null,
+            "sell_value": 32786005,
+            "net_value": -32693169,
+            "icon": null,
+            "name": "消闲派",
+            "id": "YZ00081",
+            "buy_value": 92836
+          },
+          {
+            "hid": "62501b8dc760abc700e4287a",
+            "sell_value": 24434566.99,
+            "net_value": 9199328.32,
+            "icon": null,
+            "name": "量化基金",
+            "id": "YZ00049",
+            "buy_value": 33633895.31
+          }
+        ],
+        "net_value": -2625844.79,
+        "net_rate": -0.00099323,
+        "limit_reason": null,
+        "stock_code": "300561",
+        "org_net_value": 54940544.75,
+        "hot_money_net_value": -23493840.68
+      },
+      {
+        "hot_money_net_rate": -0.01533924,
+        "sell_value": 105264512.24,
+        "amount": 1552294719.44,
+        "stock_name": "广信材料",
+        "change": 0.117188,
+        "concept_list": [
+          {
+            "code": "885864",
+            "name": "光刻胶",
+            "market_id": "48"
+          },
+          {
+            "code": "885738",
+            "name": "OLED",
+            "market_id": "48"
+          },
+          {
+            "code": "886053",
+            "name": "BC电池",
+            "market_id": "48"
+          }
+        ],
+        "market_id": "33",
+        "buy_value": 93981208.94,
+        "hot_rank": 126,
+        "tags": [
+          {
+            "color": "green",
+            "name": "量化打板卖",
+            "id": null,
+            "type": "hot_money"
+          }
+        ],
+        "range_days": 1,
+        "hot_money_items": [
+          {
+            "hid": "62501d41c760abe900e42879",
+            "sell_value": 24387090,
+            "net_value": -23811028,
+            "icon": null,
+            "name": "量化打板",
+            "id": "YZ00054",
+            "buy_value": 576062
+          }
+        ],
+        "net_value": -11283303.3,
+        "net_rate": -0.00726879,
+        "limit_reason": null,
+        "stock_code": "300537",
+        "org_net_value": 33989283.94,
+        "hot_money_net_value": -23811028
+      },
+      {
+        "hot_money_net_rate": -0.00587851,
+        "sell_value": 399175662.38,
+        "amount": 4217218893.82,
+        "stock_name": "拓斯达",
+        "change": 0.200079,
+        "concept_list": [
+          {
+            "code": "885930",
+            "name": "工业母机",
+            "market_id": "48"
+          },
+          {
+            "code": "886002",
+            "name": "机器视觉",
+            "market_id": "48"
+          },
+          {
+            "code": "886057",
+            "name": "新型工业化",
+            "market_id": "48"
+          }
+        ],
+        "market_id": "33",
+        "buy_value": 422735682.66,
+        "hot_rank": 15,
+        "tags": [
+          {
+            "color": "red",
+            "name": "炒股养家买",
+            "id": null,
+            "type": "hot_money"
+          },
+          {
+            "color": "green",
+            "name": "消闲派卖",
+            "id": null,
+            "type": "hot_money"
+          },
+          {
+            "color": "green",
+            "name": "量化打板卖",
+            "id": null,
+            "type": "hot_money"
+          }
+        ],
+        "range_days": 1,
+        "hot_money_items": [
+          {
+            "hid": "62501d41c760abe900e42879",
+            "sell_value": 42171981.66,
+            "net_value": -38598269.66,
+            "icon": null,
+            "name": "量化打板",
+            "id": "YZ00054",
+            "buy_value": 3573712
+          },
+          {
+            "hid": null,
+            "sell_value": 82112243.11,
+            "net_value": -30355175.11,
+            "icon": null,
+            "name": "消闲派",
+            "id": "YZ00081",
+            "buy_value": 51757068
+          },
+          {
+            "hid": "5c8b6f3d802f64c7009bdbde",
+            "sell_value": 17356909.4,
+            "net_value": 44162476.9,
+            "icon": null,
+            "name": "炒股养家",
+            "id": "YZ00011",
+            "buy_value": 61519386.3
+          }
+        ],
+        "net_value": 23560020.28,
+        "net_rate": 0.00558662,
+        "limit_reason": "工业机器人+华为概念+低空经济+新型工业化",
+        "stock_code": "300607",
+        "org_net_value": null,
+        "hot_money_net_value": -24790967.87
+      },
+      {
+        "hot_money_net_rate": -0.0353336,
+        "sell_value": 99073765.06,
+        "amount": 1450432743,
+        "stock_name": "金桥信息",
+        "change": 0.044366,
+        "concept_list": [
+          {
+            "code": "885956",
+            "name": "智慧政务",
+            "market_id": "48"
+          },
+          {
+            "code": "885881",
+            "name": "云办公",
+            "market_id": "48"
+          },
+          {
+            "code": "886023",
+            "name": "数据确权",
+            "market_id": "48"
+          }
+        ],
+        "market_id": "17",
+        "buy_value": 76842156.32,
+        "hot_rank": 161,
+        "tags": [
+          {
+            "color": "green",
+            "name": "量化基金卖",
+            "id": null,
+            "type": "hot_money"
+          }
+        ],
+        "range_days": 1,
+        "hot_money_items": [
+          {
+            "hid": "62501b8dc760abc700e4287a",
+            "sell_value": 51249009.86,
+            "net_value": -51249009.86,
+            "icon": null,
+            "name": "量化基金",
+            "id": "YZ00049",
+            "buy_value": null
+          }
+        ],
+        "net_value": -22231608.74,
+        "net_rate": -0.01532757,
+        "limit_reason": null,
+        "stock_code": "603918",
+        "org_net_value": 16897847.88,
+        "hot_money_net_value": -51249009.86
+      },
+      {
+        "hot_money_net_rate": -0.01403928,
+        "sell_value": 336548513.64,
+        "amount": 4210020689.31,
+        "stock_name": "中科金财",
+        "change": 0.100079,
+        "concept_list": [
+          {
+            "code": "885866",
+            "name": "数字货币",
+            "market_id": "48"
+          },
+          {
+            "code": "885956",
+            "name": "智慧政务",
+            "market_id": "48"
+          },
+          {
+            "code": "886023",
+            "name": "数据确权",
+            "market_id": "48"
+          }
+        ],
+        "market_id": "33",
+        "buy_value": 302384351.94,
+        "hot_rank": 12,
+        "tags": [
+          {
+            "color": "red",
+            "name": "余哥买",
+            "id": null,
+            "type": "hot_money"
+          },
+          {
+            "color": "red",
+            "name": "南京帮买",
+            "id": null,
+            "type": "hot_money"
+          },
+          {
+            "color": "green",
+            "name": "呼家楼卖",
+            "id": null,
+            "type": "hot_money"
+          },
+          {
+            "color": "green",
+            "name": "上海溧阳路卖",
+            "id": null,
+            "type": "hot_money"
+          }
+        ],
+        "range_days": 1,
+        "hot_money_items": [
+          {
+            "hid": null,
+            "sell_value": 13050,
+            "net_value": 100363908.42,
+            "icon": null,
+            "name": "余哥",
+            "id": "YZ00067",
+            "buy_value": 100376958.42
+          },
+          {
+            "hid": null,
+            "sell_value": 72750053,
+            "net_value": -72435746,
+            "icon": null,
+            "name": "呼家楼",
+            "id": "YZ00073",
+            "buy_value": 314307
+          },
+          {
+            "hid": "5f8ed593107589df00b9b1a5",
+            "sell_value": 129459446.16,
+            "net_value": -129338548.16,
+            "icon": null,
+            "name": "上海溧阳路",
+            "id": "YZ00037",
+            "buy_value": 120898
+          },
+          {
+            "hid": null,
+            "sell_value": 112489,
+            "net_value": 42304714,
+            "icon": null,
+            "name": "南京帮",
+            "id": "YZ00085",
+            "buy_value": 42417203
+          }
+        ],
+        "net_value": -34164161.7,
+        "net_rate": -0.00811496,
+        "limit_reason": "接入智谱+摩尔线程合作+算力租赁+AMC+金融科技",
+        "stock_code": "002657",
+        "org_net_value": null,
+        "hot_money_net_value": -59105671.74
+      },
+      {
+        "hot_money_net_rate": -0.09578485,
+        "sell_value": 114944589.12,
+        "amount": 893191707.1,
+        "stock_name": "久盛电气",
+        "change": 0.026136,
+        "concept_list": [
+          {
+            "code": "886011",
+            "name": "光热发电",
+            "market_id": "48"
+          },
+          {
+            "code": "886065",
+            "name": "可控核聚变",
+            "market_id": "48"
+          },
+          {
+            "code": "886001",
+            "name": "高压快充",
+            "market_id": "48"
+          }
+        ],
+        "market_id": "33",
+        "buy_value": 69489499.2,
+        "hot_rank": 262,
+        "tags": [
+          {
+            "color": "green",
+            "name": "量化打板卖",
+            "id": null,
+            "type": "hot_money"
+          },
+          {
+            "color": "green",
+            "name": "上海超短卖",
+            "id": null,
+            "type": "hot_money"
+          },
+          {
+            "color": "green",
+            "name": "低位挖掘卖",
+            "id": null,
+            "type": "hot_money"
+          }
+        ],
+        "range_days": 1,
+        "hot_money_items": [
+          {
+            "hid": null,
+            "sell_value": 34813661.6,
+            "net_value": -34813661.6,
+            "icon": null,
+            "name": "低位挖掘",
+            "id": "YZ00076",
+            "buy_value": 0
+          },
+          {
+            "hid": "62501d41c760abe900e42879",
+            "sell_value": 22016901.6,
+            "net_value": -21096682.6,
+            "icon": null,
+            "name": "量化打板",
+            "id": "YZ00054",
+            "buy_value": 920219
+          },
+          {
+            "hid": "5c8b6f32802f64c4009bdbdd",
+            "sell_value": 29643888.52,
+            "net_value": -29643888.52,
+            "icon": null,
+            "name": "上海超短",
+            "id": "YZ00066",
+            "buy_value": 0
+          }
+        ],
+        "net_value": -45455089.92,
+        "net_rate": -0.05089063,
+        "limit_reason": null,
+        "stock_code": "301082",
+        "org_net_value": null,
+        "hot_money_net_value": -85554232.72
+      },
+      {
+        "hot_money_net_rate": -0.02225969,
+        "sell_value": 489288522.01,
+        "amount": 4731908451,
+        "stock_name": "日出东方",
+        "change": 0.1,
+        "concept_list": [
+          {
+            "code": "885835",
+            "name": "参股银行",
+            "market_id": "48"
+          },
+          {
+            "code": "886010",
+            "name": "空气能热泵",
+            "market_id": "48"
+          },
+          {
+            "code": "885386",
+            "name": "建筑节能",
+            "market_id": "48"
+          },
+          {
+            "code": "885413",
+            "name": "创投",
+            "market_id": "48"
+          }
+        ],
+        "market_id": "17",
+        "buy_value": 303196640.42,
+        "hot_rank": 3,
+        "tags": [
+          {
+            "color": "orange",
+            "name": "3日",
+            "id": null,
+            "type": "range"
+          },
+          {
+            "color": "red",
+            "name": "炒股养家买",
+            "id": null,
+            "type": "hot_money"
+          },
+          {
+            "color": "green",
+            "name": "涪陵广场路卖",
+            "id": null,
+            "type": "hot_money"
+          }
+        ],
+        "range_days": 3,
+        "hot_money_items": [
+          {
+            "hid": "5c8b6f3d802f64c7009bdbde",
+            "sell_value": null,
+            "net_value": 54627226,
+            "icon": null,
+            "name": "炒股养家",
+            "id": "YZ00011",
+            "buy_value": 54627226
+          },
+          {
+            "hid": "62501a52c760abc500e42879",
+            "sell_value": 159958062.25,
+            "net_value": -159958062.25,
+            "icon": null,
+            "name": "涪陵广场路",
+            "id": "YZ00044",
+            "buy_value": null
+          }
+        ],
+        "net_value": -186091881.59,
+        "net_rate": -0.03932702,
+        "limit_reason": "液冷超充+华为+光伏+储能",
+        "stock_code": "603366",
+        "org_net_value": null,
+        "hot_money_net_value": -105330836.25
+      },
+      {
+        "hot_money_net_rate": -0.08126078,
+        "sell_value": 322296928.82,
+        "amount": 1391626763,
+        "stock_name": "沐邦高科",
+        "change": 0.099552,
+        "concept_list": [
+          {
+            "code": "886007",
+            "name": "TOPCON电池",
+            "market_id": "48"
+          },
+          {
+            "code": "885539",
+            "name": "医疗器械概念",
+            "market_id": "48"
+          },
+          {
+            "code": "885531",
+            "name": "光伏概念",
+            "market_id": "48"
+          }
+        ],
+        "market_id": "17",
+        "buy_value": 118648333.3,
+        "hot_rank": 184,
+        "tags": [
+          {
+            "color": "red",
+            "name": "北京中关村买",
+            "id": null,
+            "type": "hot_money"
+          },
+          {
+            "color": "green",
+            "name": "量化基金卖",
+            "id": null,
+            "type": "hot_money"
+          }
+        ],
+        "range_days": 1,
+        "hot_money_items": [
+          {
+            "hid": "635fc62d3d41d2df00cae1d2",
+            "sell_value": null,
+            "net_value": 20438886,
+            "icon": null,
+            "name": "北京中关村",
+            "id": "YZ00064",
+            "buy_value": 20438886
+          },
+          {
+            "hid": "62501b8dc760abc700e4287a",
+            "sell_value": 171709568.8,
+            "net_value": -133523567.5,
+            "icon": null,
+            "name": "量化基金",
+            "id": "YZ00049",
+            "buy_value": 38186001.3
+          }
+        ],
+        "net_value": -203648595.52,
+        "net_rate": -0.14633852,
+        "limit_reason": null,
+        "stock_code": "603398",
+        "org_net_value": null,
+        "hot_money_net_value": -113084681.5
+      }
+    ]
+  }
+}
