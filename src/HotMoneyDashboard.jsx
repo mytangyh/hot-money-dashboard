@@ -114,7 +114,7 @@ const HotMoneyDashboard = () => {
 
   return (
     <div className="space-y-6 p-4">
-      <h1 className="text-2xl font-bold">资金流向分析看板</h1>
+      <h1 className="text-2xl font-bold">游资龙虎榜</h1>
       
       {Object.entries(groupedData).map(([name, stocks]) => (
         <Card key={name} className="w-full">
@@ -122,52 +122,36 @@ const HotMoneyDashboard = () => {
             <CardTitle className="flex items-center justify-between">
               <span>{name}</span>
               <Badge variant="secondary">
-                {stocks.length} 只股票
+                总净值：{formatValue(stocks.reduce((sum, stock) => sum + stock.net_value, 0))}
               </Badge>
             </CardTitle>
           </CardHeader>
-          <CardContent>
+          <CardContent className="p-0">
             <div className="overflow-x-auto">
-              <table className="min-w-full divide-y divide-gray-200">
-                <thead className="bg-gray-50">
-                  <tr>
-                    <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">股票</th>
-                    <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">代码</th>
-                    <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">涨跌幅</th>
-                    <th scope="col" className="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">买入金额</th>
-                    <th scope="col" className="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">卖出金额</th>
-                    <th scope="col" className="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">净买入</th>
+              <table className="w-full border-collapse">
+                <thead>
+                  <tr className="border-b border-gray-200 bg-gray-50/40">
+                    <th scope="col" className="py-4 px-6 text-left text-sm font-semibold text-gray-900">股票</th>
+                    <th scope="col" className="py-4 px-6 text-left text-sm font-semibold text-gray-900">涨跌幅</th>
+                    <th scope="col" className="py-4 px-6 text-right text-sm font-semibold text-gray-900">净买入</th>
                   </tr>
                 </thead>
-                <tbody className="bg-white divide-y divide-gray-200">
+                <tbody className="divide-y divide-gray-200 bg-white">
                   {stocks.map((stock, idx) => (
-                    <tr key={`${stock.stock_code}-${idx}`}>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{stock.stock_name}</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{stock.stock_code}</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm">
-                        <span className={stock.change >= 0 ? 'text-green-600' : 'text-red-600'}>
+                    <tr key={`${stock.stock_code}-${idx}`} className="hover:bg-gray-50/50 transition-colors">
+                      <td className="py-4 px-6 text-sm font-medium text-gray-900">{stock.stock_name}</td>
+                      <td className="py-4 px-6 text-sm">
+                        <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${
+                          stock.change >= 0 ? 'bg-red-100 text-red-800' : 'bg-green-100 text-green-800'
+                        }`}>
                           {formatPercent(stock.change)}
                         </span>
                       </td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-right text-green-600">{formatValue(stock.buy_value)}</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-right text-red-600">{formatValue(stock.sell_value)}</td>
-                      <td className={`px-6 py-4 whitespace-nowrap text-sm text-right ${stock.net_value >= 0 ? 'text-green-600' : 'text-red-600'}`}>
+                      <td className={`py-4 px-6 text-sm text-right font-medium ${stock.net_value >= 0 ? 'text-red-600' : 'text-green-600'}`}>
                         {formatValue(stock.net_value)}
                       </td>
                     </tr>
                   ))}
-                  <tr className="bg-gray-50">
-                    <td colSpan={3} className="px-6 py-4 whitespace-nowrap text-sm font-bold text-gray-900">合计</td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-right font-bold text-green-600">
-                      {formatValue(stocks.reduce((sum, stock) => sum + stock.buy_value, 0))}
-                    </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-right font-bold text-red-600">
-                      {formatValue(stocks.reduce((sum, stock) => sum + stock.sell_value, 0))}
-                    </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-right font-bold">
-                      {formatValue(stocks.reduce((sum, stock) => sum + stock.net_value, 0))}
-                    </td>
-                  </tr>
                 </tbody>
               </table>
             </div>
