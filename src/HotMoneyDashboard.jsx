@@ -43,7 +43,7 @@ const HotMoneyDashboard = () => {
         stocks,
         totalNetValue: stocks.reduce((sum, stock) => sum + stock.net_value, 0)
       }))
-      .sort((a, b) => b.totalNetValue - a.totalNetValue);
+      .sort((a, b) => Math.abs(b.totalNetValue) - Math.abs(a.totalNetValue));
 
     return sortedGroups;
   }, [jsonData]); // 依赖 jsonData 变化重新计算
