@@ -24,9 +24,10 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "craco start",
-    "build": "craco build",
-    "test": "craco test",
+    "dev": "set PORT=3000 && set HOST=0.0.0.0 && react-scripts start",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -35,7 +36,6 @@
       "react-app/jest"
     ]
   },
-  "type": "module",
   "browserslist": {
     "production": [
       ">0.2%",
@@ -47,8 +47,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@craco/craco": "^7.1.0"
   }
 }
