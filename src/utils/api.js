@@ -1,8 +1,18 @@
 import axios from 'axios';
-import fs from 'fs/promises';
-import path from 'path';
 
 const BASE_URL = 'https://data.10jqka.com.cn/dataapi/transaction/stock/v1/list';
+
+export async function checkDataExists(date) {
+  try {
+    const response = await axios.get(`/api/data/hot_money_${date}.json`);
+    return { exists: true, data: response.data };
+  } catch (error) {
+    if (error.response && error.response.status === 404) {
+      return { exists: false };
+    }
+    throw error;
+  }
+}
 
 export async function fetchHotMoneyData(date) {
   try {
@@ -20,19 +30,6 @@ export async function fetchHotMoneyData(date) {
     });
 
     if (response.data.status_code === 0) {
-      // Create data directory if it doesn't exist
-      const dataDir = path.join(process.cwd(), 'data');
-      try {
-        await fs.mkdir(dataDir, { recursive: true });
-      } catch (err) {
-        if (err.code !== 'EEXIST') throw err;
-      }
-
-      // Save response to JSON file
-      const fileName = `hot_money_${date}.json`;
-      const filePath = path.join(dataDir, fileName);
-      await fs.writeFile(filePath, JSON.stringify(response.data, null, 2));
-
       return response.data.data.items;
     } else {
       throw new Error(response.data.status_msg || 'Failed to fetch data');

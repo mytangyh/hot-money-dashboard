@@ -1,14 +1,53 @@
-import React, { useMemo, useRef } from 'react';
+import React, { useMemo, useRef, useEffect, useState } from 'react';
 import { Card, CardHeader, CardTitle, CardContent } from './components/ui/card';
 import { Badge } from './components/ui/badge';
 import html2canvas from 'html2canvas';
-import jsonData from './data/hot_money_2024-11-21.json';
 
 const HotMoneyDashboard = () => {
   const containerRef = useRef(null);
-  const CARDS_PER_PAGE = 8; // 增加每页显示的卡片数量
+  const CARDS_PER_PAGE = 8;
+  const [jsonData, setJsonData] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const loadData = async () => {
+      try {
+        const today = new Date().toISOString().split('T')[0];
+        const yesterday = new Date(Date.now() - 86400000).toISOString().split('T')[0];
+        
+        // 尝试加载今天的数据
+        try {
+          const todayData = await import(`./data/hot_money_${today}.json`);
+          setJsonData(todayData.default);
+          console.log('Using today\'s data');
+          return;
+        } catch (e) {
+          console.log('Today\'s data not found, trying yesterday\'s data');
+        }
+
+        // 如果今天的数据不存在，尝试加载昨天的数据
+        try {
+          const yesterdayData = await import(`./data/hot_money_${yesterday}.json`);
+          setJsonData(yesterdayData.default);
+          console.log('Using yesterday\'s data');
+        } catch (e) {
+          throw new Error('No data available for today or yesterday');
+        }
+      } catch (error) {
+        console.error('Error loading data:', error);
+        setError(error.message);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    loadData();
+  }, []);
 
   const groupedData = useMemo(() => {
+    if (!jsonData) return [];
+
     const groups = {};
     
     // 遍历每只股票
@@ -16,17 +55,16 @@ const HotMoneyDashboard = () => {
       if (stock.hot_money_items) {
         // 遍历每只股票的 hot_money_items
         stock.hot_money_items.forEach(item => {
-          const name = item.name; // 分组依据为 item.name
+          const name = item.name;
           // 跳过量化打板和量化基金
           if (name === "量化打板" || name === "量化基金") {
             return;
           }
           if (!groups[name]) {
-            groups[name] = []; // 如果该分组不存在，初始化为空数组
+            groups[name] = [];
           }
-          // 向分组中添加数据，包含 stock_name 等相关字段
           groups[name].push({
-            ...item, // 保留原有 hot_money_item 的所有属性
+            ...item,
             stock_name: stock.stock_name,
             stock_code: stock.stock_code || '',
             change: stock.change,
@@ -35,7 +73,7 @@ const HotMoneyDashboard = () => {
       }
     });
 
-    // 对每个分组内的股票按照净买入量（net_value）排序
+    // 对每个分组内的股票按照净买入量排序
     Object.keys(groups).forEach(name => {
       groups[name].sort((a, b) => b.net_value - a.net_value);
     });
@@ -50,7 +88,7 @@ const HotMoneyDashboard = () => {
       .sort((a, b) => Math.abs(b.totalNetValue) - Math.abs(a.totalNetValue));
 
     return sortedGroups;
-  }, [jsonData]); // 依赖 jsonData 变化重新计算
+  }, [jsonData]);
 
   const formatValue = (value) => {
     const absValue = Math.abs(value);
@@ -108,6 +146,28 @@ const HotMoneyDashboard = () => {
       if (generateButton) generateButton.style.display = 'block';
     }
   };
+
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-red-50 via-white to-red-50 flex justify-center items-center">
+        <div className="text-center">
+          <div className="text-2xl font-bold mb-2">Loading...</div>
+          <div className="text-gray-500">Please wait for the data to load.</div>
+        </div>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-red-50 via-white to-red-50 flex justify-center items-center">
+        <div className="text-center">
+          <div className="text-2xl font-bold mb-2">Error</div>
+          <div className="text-gray-500">{error}</div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-red-50 via-white to-red-50" ref={containerRef}>
