@@ -1,70 +1,90 @@
-# Getting Started with Create React App
+# Hot Money Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+一个用于展示和分析股票资金流向的实时仪表盘应用。
 
-## Available Scripts
+## 项目概述
 
-In the project directory, you can run:
+Hot Money Dashboard 是一个基于 React 的网页应用，用于可视化展示股票市场的资金流向数据。它能够帮助投资者和分析师实时监控市场热点，跟踪主力资金动向。
 
-### `npm start`
+### 主要功能
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- 实时展示股票资金流向数据
+- 按资金类型（机构、游资等）分组展示
+- 支持股票数据排序和筛选
+- 支持隐私模式
+- 支持数据导出和截图
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 技术栈
 
-### `npm test`
+- React 18
+- Tailwind CSS
+- Axios
+- HTML2Canvas (用于截图功能)
+- Radix UI 组件库
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 开发环境设置
 
-### `npm run build`
+1. 克隆项目
+```bash
+git clone [repository-url]
+cd hot-money-dashboard
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. 安装依赖
+```bash
+npm install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. 启动开发服务器
+```bash
+npm run dev
+```
+应用将在 http://localhost:3000 启动
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 项目结构
 
-### `npm run eject`
+```
+hot-money-dashboard/
+├── src/
+│   ├── components/    # UI组件
+│   ├── utils/         # 工具函数
+│   ├── data/          # 数据文件
+│   ├── App.jsx        # 应用入口
+│   └── HotMoneyDashboard.jsx  # 主仪表盘组件
+├── public/            # 静态资源
+└── config/           # 配置文件
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 构建和部署
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+构建生产版本：
+```bash
+npm run build
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+构建后的文件将生成在 `build` 目录中，可以部署到任何静态文件服务器。
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 数据格式
 
-## Learn More
+应用期望的数据格式为 JSON，存放在 `src/data` 目录下，文件名格式为 `hot_money_YYYY-MM-DD.json`。
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 环境变量
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+创建 `.env` 文件并设置以下变量：
+- `REACT_APP_API_URL`: API 服务器地址（如果需要）
 
-### Code Splitting
+## 贡献指南
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Fork 项目
+2. 创建特性分支 (`git checkout -b feature/AmazingFeature`)
+3. 提交更改 (`git commit -m 'Add some AmazingFeature'`)
+4. 推送到分支 (`git push origin feature/AmazingFeature`)
+5. 开启 Pull Request
 
-### Analyzing the Bundle Size
+## 许可证
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+[MIT License](LICENSE)
 
-### Making a Progressive Web App
+## 联系方式
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+如有问题或建议，请提交 issue 或联系项目维护者。
