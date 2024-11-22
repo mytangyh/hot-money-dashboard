@@ -4,13 +4,12 @@ const BASE_URL = 'https://data.10jqka.com.cn/dataapi/transaction/stock/v1/list';
 
 export async function checkDataExists(date) {
   try {
-    const response = await axios.get(`/api/data/hot_money_${date}.json`);
-    return { exists: true, data: response.data };
+    // 使用动态导入加载本地 JSON 文件
+    const data = await import(`../data/hot_money_${date}.json`);
+    return { exists: true, data };
   } catch (error) {
-    if (error.response && error.response.status === 404) {
-      return { exists: false };
-    }
-    throw error;
+    console.log('Data not found for date:', date);
+    return { exists: false };
   }
 }
 
