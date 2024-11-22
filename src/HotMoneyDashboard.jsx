@@ -61,30 +61,55 @@ const HotMoneyDashboard = () => {
             return;
           }
           if (!groups[name]) {
-            groups[name] = [];
+            groups[name] = {
+              stocks: [],
+              uniqueStocks: new Set(), // 用于去重计算总净值
+            };
           }
-          groups[name].push({
+
+          // 添加股票到显示列表
+          groups[name].stocks.push({
             ...item,
             stock_name: stock.stock_name,
             stock_code: stock.stock_code || '',
             change: stock.change,
+            tags: stock.tags || [],
           });
+
+          // 生成唯一标识
+          const stockKey = `${stock.stock_name}-${item.net_value}`;
+          // 如果这是新的股票+净值组合，添加到唯一集合中
+          if (!groups[name].uniqueStocks.has(stockKey)) {
+            groups[name].uniqueStocks.add(stockKey);
+          }
         });
       }
     });
 
     // 对每个分组内的股票按照净买入量排序
     Object.keys(groups).forEach(name => {
-      groups[name].sort((a, b) => b.net_value - a.net_value);
+      groups[name].stocks.sort((a, b) => b.net_value - a.net_value);
     });
 
-    // 计算每个分组的总净买入量并排序
+    // 计算每个分组的总净买入量并排序（只计算唯一的股票）
     const sortedGroups = Object.entries(groups)
-      .map(([name, stocks]) => ({
-        name,
-        stocks,
-        totalNetValue: stocks.reduce((sum, stock) => sum + stock.net_value, 0)
-      }))
+      .map(([name, { stocks, uniqueStocks }]) => {
+        // 创建一个 Map 来存储每个唯一股票的净值
+        const uniqueNetValues = new Map();
+        stocks.forEach(stock => {
+          const key = `${stock.stock_name}-${stock.net_value}`;
+          if (uniqueStocks.has(key)) {
+            uniqueNetValues.set(key, stock.net_value);
+            uniqueStocks.delete(key); // 确保每个组合只计算一次
+          }
+        });
+
+        return {
+          name,
+          stocks, // 保持所有股票用于显示
+          totalNetValue: Array.from(uniqueNetValues.values()).reduce((sum, value) => sum + value, 0)
+        };
+      })
       .sort((a, b) => Math.abs(b.totalNetValue) - Math.abs(a.totalNetValue));
 
     return sortedGroups;
@@ -173,48 +198,38 @@ const HotMoneyDashboard = () => {
     <div className="min-h-screen bg-gradient-to-br from-red-50 via-white to-red-50" ref={containerRef}>
       <div className="sticky top-0 z-10 bg-white/80 backdrop-blur-sm shadow-sm">
         <div className="max-w-7xl mx-auto px-2 py-3">
-          <div className="text-center relative">            
-            {/* 标题区域 */}
-            <div className="relative">
-              <h1 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-red-600 to-orange-600 inline-flex items-center justify-center">
-                {/* 左侧装饰 */}
-                <div className="absolute -left-12 top-1/2 -translate-y-1/2 hidden sm:block">
-                  <div className="flex items-center text-red-800/20 transform -rotate-12">
-                    <span className="text-4xl">🐉</span>
-                  </div>
+          <div className="text-center relative">
+            <h1 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-red-600 to-orange-600 inline-flex items-center justify-center">
+              {/* 左侧装饰 */}
+              <div className="absolute -left-12 top-1/2 -translate-y-1/2 hidden sm:block">
+                <div className="flex items-center text-red-800/20 transform -rotate-12">
+                  <span className="text-4xl">🐉</span>
                 </div>
-                
-                游资龙虎榜
+              </div>
+              
+              游资龙虎榜
 
-                {/* 右侧装饰 */}
-                <div className="absolute -right-12 top-1/2 -translate-y-1/2 hidden sm:block">
-                  <div className="flex items-center text-red-800/20 transform rotate-12">
-                    <span className="text-4xl">🐯</span>
-                  </div>
+              {/* 右侧装饰 */}
+              <div className="absolute -right-12 top-1/2 -translate-y-1/2 hidden sm:block">
+                <div className="flex items-center text-red-800/20 transform rotate-12">
+                  <span className="text-4xl">🐯</span>
                 </div>
-              </h1>
-              <p className="text-xs text-gray-500 mt-0.5">
-                {(() => {
-                  const now = new Date();
-                  const displayDate = now.getHours() < 12 ? 
-                    new Date(now.setDate(now.getDate() - 1)) : 
-                    now;
-                  return `${displayDate.toLocaleDateString('zh-CN', { weekday: 'long' })} · ${displayDate.toLocaleDateString('zh-CN')} 数据更新`;
-                })()}
-              </p>
-            </div>
-
-            {/* 生成按钮 - 隐藏 */}
-            <button
-              onClick={generatePosters}
-              className="hidden generate-button"
-            >
-            </button>
+              </div>
+            </h1>
+            <p className="text-xs text-gray-500 mt-0.5">
+              {(() => {
+                const now = new Date();
+                const displayDate = now.getHours() < 12 ? 
+                  new Date(now.setDate(now.getDate() - 1)) : 
+                  now;
+                return `${displayDate.toLocaleDateString('zh-CN', { weekday: 'long' })} · ${displayDate.toLocaleDateString('zh-CN')} 数据更新`;
+              })()}
+            </p>
           </div>
         </div>
       </div>
       
-      <div className="max-w-7xl mx-auto p-2">
+      <div className="max-w-7xl mx-auto px-4 py-8" style={{ height: '800px', overflowY: 'auto' }}>
         <div className="grid gap-1">
           {groupedData.map(({ name, stocks, totalNetValue }) => (
             <Card key={name} className="card border-0 shadow-sm hover:shadow-md transition-shadow bg-white/90 backdrop-blur-sm
@@ -244,7 +259,7 @@ const HotMoneyDashboard = () => {
                   <table className="w-full border-collapse text-xs">
                     <tbody className="divide-y divide-gray-100">
                       {stocks.map((stock, idx) => (
-                        <tr key={`${stock.stock_code}-${idx}`} className="hover:bg-red-50/30">
+                        <tr key={`${stock.stock_code}-${idx}`} className="hover:bg-gray-50/50">
                           <td className={`py-1 px-2 font-medium text-gray-900 whitespace-nowrap overflow-hidden text-ellipsis ${
                             idx === stocks.length - 1 ? 'pb-0' : ''
                           }`}>
@@ -252,6 +267,11 @@ const HotMoneyDashboard = () => {
                               <span className="truncate flex items-center">
                                 <span className="mr-1 opacity-50">🔖</span>
                                 {stock.stock_name}
+                                {stock.tags && stock.tags.some(tag => tag.name === '3日') && (
+                                  <span className="ml-1 text-[10px] text-orange-500 border border-orange-300 px-0.5 rounded">
+                                    3日
+                                  </span>
+                                )}
                               </span>
                               {stock.range_days === 3 && (
                                 <span className="inline-flex flex-shrink-0 items-center px-1 py-0.5 rounded-sm text-xs 
