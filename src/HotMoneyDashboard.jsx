@@ -217,8 +217,8 @@ const HotMoneyDashboard = () => {
           <div className="text-center relative">
             <h1 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-red-600 to-orange-600 inline-flex items-center justify-center">
               {/* 左侧装饰 */}
-              <div className="absolute -left-12 top-1/2 -translate-y-1/2 hidden sm:block">
-                <div className="flex items-center text-red-800/20 transform -rotate-12">
+              <div className="absolute left-16 top-1/2 -translate-y-1/2  sm:block">
+                <div className="flex items-center text-red-800/20 transform ">
                   <span className="text-4xl">🐉</span>
                 </div>
               </div>
@@ -226,12 +226,21 @@ const HotMoneyDashboard = () => {
               {isPrivacyMode ? '柚子龙虎榜' : '游资龙虎榜'}
 
               {/* 右侧装饰 */}
-              <div className="absolute -right-12 top-1/2 -translate-y-1/2 hidden sm:block">
-                <div className="flex items-center text-red-800/20 transform rotate-12">
+              <div className="absolute right-16 top-1/2 -translate-y-1/2  sm:block">
+                <div className="flex items-center text-red-800/20 transform ">
                   <span className="text-4xl">🐯</span>
                 </div>
               </div>
             </h1>
+            <p className="text-xs text-gray-500 mt-0.5">
+              {(() => {
+                const now = new Date();
+                const displayDate = now.getHours() < 12 ? 
+                  new Date(now.setDate(now.getDate() - 1)) : 
+                  now;
+                return `${displayDate.toLocaleDateString('zh-CN', { weekday: 'long' })} · ${displayDate.toLocaleDateString('zh-CN')} 数据更新`;
+              })()}
+            </p>
             {/* 隐私模式切换按钮 */}
             <button
               onClick={() => setIsPrivacyMode(!isPrivacyMode)}
@@ -254,7 +263,7 @@ const HotMoneyDashboard = () => {
         </div>
       </div>
       
-      <div className="max-w-7xl mx-auto px-4 py-8" style={{ height: '800px', overflowY: 'auto' }}>
+      <div className="max-w-7xl mx-auto px-4 py-8" >
         <div className="grid gap-1">
           {groupedData.map(({ name, stocks, totalNetValue }) => (
             <Card key={name} className="card border-0 shadow-sm hover:shadow-md transition-shadow bg-white/90 backdrop-blur-sm
