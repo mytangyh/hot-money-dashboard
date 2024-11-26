@@ -29,7 +29,7 @@ export async function fetchHotMoneyData(date) {
     });
 
     if (response.data.status_code === 0) {
-      return response.data.data.items;
+      return response.data;
     } else {
       throw new Error(response.data.status_msg || 'Failed to fetch data');
     }
