@@ -3,6 +3,77 @@ import { Card, CardHeader, CardTitle, CardContent } from './components/ui/card';
 import { Badge } from './components/ui/badge';
 import html2canvas from 'html2canvas';
 
+const CoverPage = ({ date }) => {
+  // 格式化日期显示
+  const formatDate = (dateStr) => {
+    const date = new Date(dateStr);
+    const weekDay = date.toLocaleDateString('zh-CN', { weekday: 'long' });
+    return {
+      weekDay,
+      date: date.toLocaleDateString('zh-CN')
+    };
+  };
+
+  const { weekDay, date: formattedDate } = formatDate(date);
+
+  return (
+    <div className="min-h-screen relative overflow-hidden bg-gradient-to-br from-red-50 via-white to-red-50">
+      {/* 装饰性背景元素 */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute top-0 left-0 w-96 h-96 bg-red-100 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+        <div className="absolute top-0 right-0 w-96 h-96 bg-yellow-100 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+        <div className="absolute -bottom-8 left-20 w-96 h-96 bg-pink-100 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
+        
+        {/* 网格背景 */}
+        <div className="absolute inset-0" style={{
+          backgroundImage: `radial-gradient(circle at 1px 1px, rgba(0, 0, 0, 0.05) 1px, transparent 0)`,
+          backgroundSize: '40px 40px'
+        }}></div>
+      </div>
+
+      {/* 主要内容 */}
+      <div className="relative flex flex-col items-center justify-center min-h-screen p-8">
+        <div className="max-w-4xl w-full space-y-12 text-center">
+          {/* 标题区域 */}
+          <div className="space-y-6">
+            <h1 className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-orange-600 
+              filter drop-shadow-sm">
+              游资龙虎榜
+            </h1>
+            <div className="space-y-1">
+              <div className="text-3xl font-semibold text-gray-800">
+                {formattedDate}
+              </div>
+              <div className="text-2xl text-gray-600">
+                {weekDay}
+              </div>
+            </div>
+          </div>
+
+          {/* 装饰线 */}
+          <div className="flex items-center justify-center space-x-4">
+            <div className="h-0.5 w-12 bg-gradient-to-r from-transparent via-red-300 to-transparent"></div>
+            <span className="text-2xl">🐉</span>
+            <div className="h-0.5 w-32 bg-gradient-to-r from-transparent via-red-300 to-transparent"></div>
+            <span className="text-2xl">🐯</span>
+            <div className="h-0.5 w-12 bg-gradient-to-r from-transparent via-red-300 to-transparent"></div>
+          </div>
+
+          {/* 免责声明卡片 - 减小尺寸和边距 */}
+          <div className="bg-white/80 backdrop-blur-sm p-4 rounded-lg shadow-lg border border-red-100 max-w-2xl mx-auto">
+            <h2 className="text-lg font-semibold text-gray-800 mb-2">免责声明</h2>
+            <div className="text-gray-600 text-left text-sm space-y-1">
+              <p>本数据分析报告仅供参考，不构成任何投资建议。投资有风险，入市需谨慎。</p>
+              <p>数据来源于公开市场，我们不对数据的准确性、完整性、及时性做出任何保证。</p>
+              <p>使用本报告进行投资决策所造成的一切后果，由投资者自行承担。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const HotMoneyDashboard = () => {
   const containerRef = useRef(null);
   const CARDS_PER_PAGE = 8;
@@ -210,8 +281,14 @@ const HotMoneyDashboard = () => {
     );
   }
 
+  const now = new Date();
+  const displayDate = now.getHours() < 12 ? 
+    new Date(now.setDate(now.getDate() - 1)) : 
+    now;
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-red-50 via-white to-red-50" ref={containerRef}>
+      <CoverPage date={displayDate.toLocaleDateString('zh-CN')} />
       <div className="sticky top-0 z-10 bg-white/80 backdrop-blur-sm shadow-sm">
         <div className="max-w-7xl mx-auto px-2 py-3">
           <div className="text-center relative">
@@ -233,13 +310,7 @@ const HotMoneyDashboard = () => {
               </div>
             </h1>
             <p className="text-xs text-gray-500 mt-0.5">
-              {(() => {
-                const now = new Date();
-                const displayDate = now.getHours() < 12 ? 
-                  new Date(now.setDate(now.getDate() - 1)) : 
-                  now;
-                return `${displayDate.toLocaleDateString('zh-CN', { weekday: 'long' })} · ${displayDate.toLocaleDateString('zh-CN')} 数据更新`;
-              })()}
+              {displayDate.toLocaleDateString('zh-CN', { weekday: 'long' })} · {displayDate.toLocaleDateString('zh-CN')} 数据更新
             </p>
             {/* 隐私模式切换按钮 */}
             <button
