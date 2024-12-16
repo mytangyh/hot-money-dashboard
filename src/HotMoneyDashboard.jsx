@@ -1,8 +1,7 @@
-import React, { useMemo, useRef, useEffect, useState } from 'react';
+import React, { useMemo, useRef, useState } from 'react';
 import { Card, CardHeader, CardTitle, CardContent } from './components/ui/card';
 import { Badge } from './components/ui/badge';
 import html2canvas from 'html2canvas';
-import { fetchHotMoneyData } from './utils/api';
 
 const CoverPage = ({ date }) => {
   // 格式化日期显示
@@ -75,48 +74,10 @@ const CoverPage = ({ date }) => {
   );
 };
 
-const HotMoneyDashboard = () => {
+const HotMoneyDashboard = ({ jsonData }) => {
   const containerRef = useRef(null);
   const CARDS_PER_PAGE = 8;
-  const [jsonData, setJsonData] = useState(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
   const [isPrivacyMode, setIsPrivacyMode] = useState(false);
-
-  useEffect(() => {
-    const loadData = async () => {
-      try {
-        const today = new Date().toISOString().split('T')[0];
-        const yesterday = new Date(Date.now() - 86400000).toISOString().split('T')[0];
-        
-        // 首先尝试获取今天的数据
-        try {
-          const todayData = await fetchHotMoneyData(today);
-          setJsonData(todayData);
-          console.log('Using today\'s data');
-          return;
-        } catch (e) {
-          console.log('Today\'s data not found, trying yesterday\'s data');
-        }
-
-        // 如果今天的数据获取失败，尝试获取昨天的数据
-        try {
-          const yesterdayData = await fetchHotMoneyData(yesterday);
-          setJsonData(yesterdayData);
-          console.log('Using yesterday\'s data');
-        } catch (e) {
-          throw new Error('No data available for today or yesterday');
-        }
-      } catch (error) {
-        console.error('Error loading data:', error);
-        setError(error.message);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    loadData();
-  }, []);
 
   const groupedData = useMemo(() => {
     if (!jsonData) return [];
@@ -259,28 +220,6 @@ const HotMoneyDashboard = () => {
       if (generateButton) generateButton.style.display = 'block';
     }
   };
-
-  if (loading) {
-    return (
-      <div className="min-h-screen bg-gradient-to-br from-red-50 via-white to-red-50 flex justify-center items-center">
-        <div className="text-center">
-          <div className="text-2xl font-bold mb-2">Loading...</div>
-          <div className="text-gray-500">Please wait for the data to load.</div>
-        </div>
-      </div>
-    );
-  }
-
-  if (error) {
-    return (
-      <div className="min-h-screen bg-gradient-to-br from-red-50 via-white to-red-50 flex justify-center items-center">
-        <div className="text-center">
-          <div className="text-2xl font-bold mb-2">Error</div>
-          <div className="text-gray-500">{error}</div>
-        </div>
-      </div>
-    );
-  }
 
   const now = new Date();
   const displayDate = now.getHours() < 12 ? 

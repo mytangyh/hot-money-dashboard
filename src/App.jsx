@@ -1,7 +1,7 @@
 // App.jsx
 import React, { useEffect, useState } from 'react';
 import HotMoneyDashboard from './HotMoneyDashboard';
-import { fetchHotMoneyData, checkDataExists } from './utils/api';
+import { fetchHotMoneyData } from './utils/api';
 
 function App() {
   const [data, setData] = useState(null);
@@ -9,48 +9,59 @@ function App() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    const checkAndFetchData = async () => {
+    const loadData = async () => {
       try {
         const today = new Date().toISOString().split('T')[0];
-        setLoading(true);
+        const yesterday = new Date(Date.now() - 86400000).toISOString().split('T')[0];
         
-        // First check if we have today's data
-        const { exists, data: existingData } = await checkDataExists(today);
-        
-        if (exists) {
-          setData(existingData);
-          console.log('Using existing data');
-        } else {
-          // Fetch new data if it doesn't exist
-          console.log('Fetching new data...');
-          const newData = await fetchHotMoneyData(today);
-          setData(newData);
-          console.log('Data fetched successfully');
+        // 尝试获取今天的数据
+        try {
+          const todayData = await fetchHotMoneyData(today);
+          setData(todayData);
+          console.log('Using today\'s data');
+          return;
+        } catch (e) {
+          console.log('Today\'s data not found, trying yesterday\'s data');
         }
+
+        // 如果今天的数据获取失败，尝试获取昨天的数据
+        const yesterdayData = await fetchHotMoneyData(yesterday);
+        setData(yesterdayData);
+        console.log('Using yesterday\'s data');
       } catch (error) {
-        console.error('Error checking/fetching data:', error);
-        setError(error.message);
+        console.error('Error loading data:', error);
+        setError('无法获取数据，请稍后再试');
       } finally {
         setLoading(false);
       }
     };
 
-    checkAndFetchData();
+    loadData();
   }, []);
 
   if (loading) {
-    return <div className="min-h-screen bg-gray-100 flex items-center justify-center">Loading...</div>;
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-red-50 via-white to-red-50 flex justify-center items-center">
+        <div className="text-center">
+          <div className="text-2xl font-bold mb-2">Loading...</div>
+          <div className="text-gray-500">Please wait for the data to load.</div>
+        </div>
+      </div>
+    );
   }
 
   if (error) {
-    return <div className="min-h-screen bg-gray-100 flex items-center justify-center text-red-500">{error}</div>;
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-red-50 via-white to-red-50 flex justify-center items-center">
+        <div className="text-center">
+          <div className="text-2xl font-bold mb-2">Error</div>
+          <div className="text-gray-500">{error}</div>
+        </div>
+      </div>
+    );
   }
 
-  return (
-    <div className="min-h-screen bg-gray-100">
-      <HotMoneyDashboard data={data} />
-    </div>
-  );
+  return <HotMoneyDashboard jsonData={data} />;
 }
 
 export default App;
