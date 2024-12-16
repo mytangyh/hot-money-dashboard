@@ -2,6 +2,7 @@ import React, { useMemo, useRef, useEffect, useState } from 'react';
 import { Card, CardHeader, CardTitle, CardContent } from './components/ui/card';
 import { Badge } from './components/ui/badge';
 import html2canvas from 'html2canvas';
+import { fetchHotMoneyData } from './utils/api';
 
 const CoverPage = ({ date }) => {
   // 格式化日期显示
@@ -88,20 +89,20 @@ const HotMoneyDashboard = () => {
         const today = new Date().toISOString().split('T')[0];
         const yesterday = new Date(Date.now() - 86400000).toISOString().split('T')[0];
         
-        // 尝试加载今天的数据
+        // 首先尝试获取今天的数据
         try {
-          const todayData = await import(`./data/hot_money_${today}.json`);
-          setJsonData(todayData.default);
+          const todayData = await fetchHotMoneyData(today);
+          setJsonData(todayData);
           console.log('Using today\'s data');
           return;
         } catch (e) {
           console.log('Today\'s data not found, trying yesterday\'s data');
         }
 
-        // 如果今天的数据不存在，尝试加载昨天的数据
+        // 如果今天的数据获取失败，尝试获取昨天的数据
         try {
-          const yesterdayData = await import(`./data/hot_money_${yesterday}.json`);
-          setJsonData(yesterdayData.default);
+          const yesterdayData = await fetchHotMoneyData(yesterday);
+          setJsonData(yesterdayData);
           console.log('Using yesterday\'s data');
         } catch (e) {
           throw new Error('No data available for today or yesterday');
