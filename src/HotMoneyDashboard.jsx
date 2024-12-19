@@ -2,7 +2,7 @@ import React, { useMemo, useRef, useState } from 'react';
 import { Card, CardHeader, CardTitle, CardContent } from './components/ui/card';
 import { Badge } from './components/ui/badge';
 import html2canvas from 'html2canvas';
-
+import { pinyin } from 'pinyin-pro';
 const CoverPage = ({ date }) => {
   // 格式化日期显示
   const formatDate = (dateStr) => {
@@ -164,19 +164,17 @@ const HotMoneyDashboard = ({ jsonData }) => {
 
   const maskStockName = (name) => {
     if (!isPrivacyMode) return name;
-    const len = name.length;
-    if (len <= 2) {
-      // 两个字或以下只遮挡中间
-      return name[0] + '●' + (len === 2 ? '' : name[len-1]);
-    }
-    if (len === 3) {
-      // 三个字遮挡中间
-      return name[0] + '●' + name[2];
-    }
-    // 四个字及以上遮挡中间两个字
-    return name[0] + '●●' + name[len-1];
+    
+    // 获取除最后一个字外的所有字符
+    const nameWithoutLast = name.slice(0, -1);
+    // 获取最后一个字的拼音首字母
+    const lastPinyin = pinyin(name.slice(-1), { 
+      pattern: 'first',
+      toneType: 'none' 
+    });
+    
+    return nameWithoutLast + lastPinyin.toUpperCase();
   };
-
   const generatePosters = async () => {
     if (!containerRef.current) return;
 
