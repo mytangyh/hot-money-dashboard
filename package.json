@@ -1,12 +1,12 @@
 {
-  "name": "your-project-name",
+  "name": "hot-money-dashboard",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://your-username.github.io/hot-money-dashboard/",
+  "homepage": "https://mytangyh.github.io/hot-money-dashboard/",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && cp _headers _routes.json _redirects dist/",
     "preview": "vite preview"
   },
   "dependencies": {
