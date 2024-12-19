@@ -5,7 +5,7 @@
   "homepage": "https://mytangyh.github.io/hot-money-dashboard/",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host 0.0.0.0",
     "build": "vite build && cp _headers _routes.json _redirects dist/",
     "preview": "vite preview"
   },
