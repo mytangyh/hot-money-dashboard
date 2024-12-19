@@ -4,7 +4,10 @@ import HotMoneyDashboard from './HotMoneyDashboard';
 import { fetchHotMoneyData } from './utils/api';
 
 function App() {
-  const [data, setData] = useState(null);
+  const [data, setData] = useState(() => {
+    const cached = localStorage.getItem('hotMoneyData');
+    return cached ? JSON.parse(cached) : null;
+  });
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
@@ -37,6 +40,9 @@ function App() {
     };
 
     loadData();
+
+    const interval = setInterval(loadData, 5 * 60 * 1000); // 每5分钟刷新
+    return () => clearInterval(interval);
   }, []);
 
   if (loading) {
@@ -61,7 +67,9 @@ function App() {
     );
   }
 
-  return <HotMoneyDashboard jsonData={data} />;
+  return (
+    <HotMoneyDashboard jsonData={data} />
+  );
 }
 
 export default App;
