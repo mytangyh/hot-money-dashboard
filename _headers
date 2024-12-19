@@ -1,7 +1,16 @@
-/*
-  Content-Type: text/javascript
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.js
+  Content-Type: application/javascript
   X-Content-Type-Options: nosniff
 
 /*.css
   Content-Type: text/css
-  X-Content-Type-Options: nosniff 
+  X-Content-Type-Options: nosniff
+
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer
+  Permissions-Policy: document-domain=()

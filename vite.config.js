@@ -9,7 +9,7 @@ export default defineConfig({
     {
       name: 'copy-files',
       closeBundle() {
-        const files = ['_headers', '_routes.json', '_redirects']
+        const files = ['_headers', '_routes.json', '_redirects', '_worker.js']
         files.forEach(file => {
           copyFileSync(
             resolve(__dirname, file),
