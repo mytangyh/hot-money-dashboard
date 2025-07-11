@@ -1,0 +1,9 @@
+
+> hot-money-dashboard@0.0.0 dev
+> vite --host 0.0.0.0
+
+
+  VITE v5.4.11  ready in 235 ms
+
+  ➜  Local:   http://localhost:3000/hot-money-dashboard/
+  ➜  Network: http://192.168.12.102:3000/hot-money-dashboard/

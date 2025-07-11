@@ -1,4 +1,3 @@
-// App.jsx
 import React, { useEffect, useState } from 'react';
 import HotMoneyDashboard from './HotMoneyDashboard';
 import { fetchHotMoneyData } from './utils/api';
@@ -16,23 +15,25 @@ function App() {
       try {
         const today = new Date().toISOString().split('T')[0];
         const yesterday = new Date(Date.now() - 86400000).toISOString().split('T')[0];
-        
-        // 尝试获取今天的数据
-        try {
-          const todayData = await fetchHotMoneyData(today);
-          setData(todayData);
-          console.log('Using today\'s data');
-          return;
-        } catch (e) {
-          console.log('Today\'s data not found, trying yesterday\'s data');
-        }
 
-        // 如果今天的数据获取失败，尝试获取昨天的数据
-        const yesterdayData = await fetchHotMoneyData(yesterday);
-        setData(yesterdayData);
-        console.log('Using yesterday\'s data');
-      } catch (error) {
-        console.error('Error loading data:', error);
+        // 获取今天的数据
+        const todayData = await fetchHotMoneyData(today);
+        if (todayData?.data?.items?.length > 0) {
+          setData(todayData);
+          console.log(" App Using today's data");
+        } else {
+          console.log("Today's data is empty, trying yesterday's data");
+
+          const yesterdayData = await fetchHotMoneyData(yesterday);
+          if (yesterdayData?.data?.items?.length > 0) {
+            setData(yesterdayData);
+            console.log("App Using yesterday's data");
+          } else {
+            throw new Error('今天和昨天的数据都为空');
+          }
+        }
+      } catch (err) {
+        console.error('Error loading data:', err);
         setError('无法获取数据，请稍后再试');
       } finally {
         setLoading(false);
@@ -41,8 +42,8 @@ function App() {
 
     loadData();
 
-    const interval = setInterval(loadData, 5 * 60 * 1000); // 每5分钟刷新
-    return () => clearInterval(interval);
+    // const interval = setInterval(loadData, 5 * 60 * 1000); // 每5分钟刷新
+    // return () => clearInterval(interval);
   }, []);
 
   if (loading) {

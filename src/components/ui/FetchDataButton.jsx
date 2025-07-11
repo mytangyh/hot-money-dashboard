@@ -10,6 +10,8 @@ const FetchDataButton = ({ onSuccess, onError }) => {
     try {
       const today = new Date().toISOString().split('T')[0];
       const data = await fetchHotMoneyData(today);
+      console.log(" handleClick Using today's data");
+
       onSuccess?.(data);
     } catch (error) {
       console.error('Failed to fetch data:', error);

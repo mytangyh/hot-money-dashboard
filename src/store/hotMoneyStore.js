@@ -9,6 +9,8 @@ const useHotMoneyStore = create((set) => ({
     set({ loading: true });
     try {
       const data = await fetchHotMoneyData(date);
+      console.log("useHotMoneyStore Using today's data $date");
+
       set({ data, loading: false });
     } catch (error) {
       set({ error, loading: false });

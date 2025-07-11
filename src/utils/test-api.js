@@ -23,7 +23,7 @@ async function saveDataToFile(date, data) {
 async function testApi() {
   try {
     const today = new Date().toISOString().split('T')[0];
-    console.log('Fetching data for date:', today);
+    console.log('testApi Fetching data for date:', today);
     
     const data = await fetchHotMoneyData(today);
     console.log('Successfully fetched data:');
