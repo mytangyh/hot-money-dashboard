@@ -74,7 +74,7 @@ const CoverPage = ({ date }) => {
   );
 };
 
-const HotMoneyDashboard = ({ jsonData }) => {
+const HotMoneyDashboard = ({ jsonData, selectedDate }) => {
   const containerRef = useRef(null);
   const CARDS_PER_PAGE = 8;
   const [isPrivacyMode, setIsPrivacyMode] = useState(false);
@@ -220,9 +220,11 @@ const HotMoneyDashboard = ({ jsonData }) => {
   };
 
   const now = new Date();
-  const displayDate = now.getHours() < 12 ? 
-    new Date(now.setDate(now.getDate() - 1)) : 
-    now;
+  const displayDate = new Date(selectedDate);
+
+  // const displayDate = now.getHours() < 12 ? 
+  //   new Date(now.setDate(now.getDate() - 1)) : 
+  //   now;
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-red-50 via-white to-red-50" ref={containerRef}>

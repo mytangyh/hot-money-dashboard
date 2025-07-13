@@ -21,7 +21,7 @@ export default defineConfig({
   ],
   base: '/hot-money-dashboard/',
   server: {
-    port: 3000,
+    port: 8089,
     host: '0.0.0.0'
   },
   build: {

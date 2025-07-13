@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  dashboard:
+    build: .
+    container_name: hot-money-dashboard
+    ports:
+      - "80:80"
+    restart: always
